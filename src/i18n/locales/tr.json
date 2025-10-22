@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetler",
+    "countries": "Ülkeler",
+    "training": "Eğitim",
+    "about": "Hakkında",
+    "contact": "İletişim",
+    "getStarted": "Başla"
+  },
+  "hero": {
+    "title": "Küresel Fırsatlara Açılan Kapınız",
+    "subtitle": "Japonya, Suudi Arabistan, BAE ve daha fazlası için hükümet onaylı gönderme organizasyonu"
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "subtitle": "Küresel kariyeriniz için kapsamlı çözümler"
+  },
+  "contact": {
+    "title": "İletişime Geç",
+    "subtitle": "Yurt dışı yolculuğunuza başlamaya hazır mısınız?"
+  }
+}

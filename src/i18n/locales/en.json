@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "countries": "Countries",
+    "training": "Training",
+    "about": "About",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "title": "Your Gateway to Global Opportunities",
+    "subtitle": "Government-approved sending organization for Japan, Saudi Arabia, UAE & More"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive solutions for your global career"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Ready to start your journey abroad?"
+  }
+}

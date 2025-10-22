@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "services": "Dịch vụ",
+    "countries": "Quốc gia",
+    "training": "Đào tạo",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ",
+    "getStarted": "Bắt đầu"
+  },
+  "hero": {
+    "title": "Cổng của bạn đến các cơ hội toàn cầu",
+    "subtitle": "Tổ chức gửi được chính phủ phê duyệt cho Nhật Bản, Ả Rập Saudi, UAE và nhiều hơn nữa"
+  },
+  "services": {
+    "title": "Dịch vụ của chúng tôi",
+    "subtitle": "Giải pháp toàn diện cho sự nghiệp toàn cầu của bạn"
+  },
+  "contact": {
+    "title": "Liên hệ",
+    "subtitle": "Sẵn sàng bắt đầu hành trình ra nước ngoài của bạn?"
+  }
+}

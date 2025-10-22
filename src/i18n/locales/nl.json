@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Diensten",
+    "countries": "Landen",
+    "training": "Training",
+    "about": "Over",
+    "contact": "Contact",
+    "getStarted": "Begin"
+  },
+  "hero": {
+    "title": "Uw toegangspoort tot wereldwijde kansen",
+    "subtitle": "Door de overheid goedgekeurde zendorganisatie voor Japan, Saoedi-Arabië, VAE en meer"
+  },
+  "services": {
+    "title": "Onze diensten",
+    "subtitle": "Uitgebreide oplossingen voor uw wereldwijde carrière"
+  },
+  "contact": {
+    "title": "Neem contact op",
+    "subtitle": "Klaar om uw reis naar het buitenland te beginnen?"
+  }
+}

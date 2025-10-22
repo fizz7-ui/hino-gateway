@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "services": "サービス",
+    "countries": "国",
+    "training": "トレーニング",
+    "about": "概要",
+    "contact": "お問い合わせ",
+    "getStarted": "始める"
+  },
+  "hero": {
+    "title": "グローバルな機会への入り口",
+    "subtitle": "日本、サウジアラビア、UAE等の政府認可送出機関"
+  },
+  "services": {
+    "title": "私たちのサービス",
+    "subtitle": "グローバルキャリアのための包括的なソリューション"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "海外での旅を始める準備はできていますか？"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Início",
+    "services": "Serviços",
+    "countries": "Países",
+    "training": "Treinamento",
+    "about": "Sobre",
+    "contact": "Contato",
+    "getStarted": "Começar"
+  },
+  "hero": {
+    "title": "Seu portal para oportunidades globais",
+    "subtitle": "Organização de envio aprovada pelo governo para Japão, Arábia Saudita, EAU e mais"
+  },
+  "services": {
+    "title": "Nossos serviços",
+    "subtitle": "Soluções abrangentes para sua carreira global"
+  },
+  "contact": {
+    "title": "Entre em contato",
+    "subtitle": "Pronto para começar sua jornada no exterior?"
+  }
+}

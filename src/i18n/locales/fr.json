@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "countries": "Pays",
+    "training": "Formation",
+    "about": "À propos",
+    "contact": "Contact",
+    "getStarted": "Commencer"
+  },
+  "hero": {
+    "title": "Votre passerelle vers les opportunités mondiales",
+    "subtitle": "Organisation d'envoi approuvée par le gouvernement pour le Japon, l'Arabie saoudite, les EAU et plus"
+  },
+  "services": {
+    "title": "Nos services",
+    "subtitle": "Solutions complètes pour votre carrière mondiale"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Prêt à commencer votre voyage à l'étranger?"
+  }
+}

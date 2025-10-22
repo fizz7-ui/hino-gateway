@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Laman Utama",
+    "services": "Perkhidmatan",
+    "countries": "Negara",
+    "training": "Latihan",
+    "about": "Mengenai",
+    "contact": "Hubungi",
+    "getStarted": "Mula"
+  },
+  "hero": {
+    "title": "Pintu Masuk Anda ke Peluang Global",
+    "subtitle": "Organisasi penghantaran yang diluluskan kerajaan untuk Jepun, Arab Saudi, UAE & Lain-lain"
+  },
+  "services": {
+    "title": "Perkhidmatan Kami",
+    "subtitle": "Penyelesaian komprehensif untuk kerjaya global anda"
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "subtitle": "Bersedia untuk memulakan perjalanan anda ke luar negara?"
+  }
+}

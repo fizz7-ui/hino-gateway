@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "countries": "Länder",
+    "training": "Ausbildung",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "getStarted": "Loslegen"
+  },
+  "hero": {
+    "title": "Ihr Tor zu globalen Möglichkeiten",
+    "subtitle": "Staatlich genehmigte Entsendeorganisation für Japan, Saudi-Arabien, VAE und mehr"
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Umfassende Lösungen für Ihre globale Karriere"
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Bereit, Ihre Reise ins Ausland zu beginnen?"
+  }
+}

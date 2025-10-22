@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "services": "Usługi",
+    "countries": "Kraje",
+    "training": "Szkolenie",
+    "about": "O nas",
+    "contact": "Kontakt",
+    "getStarted": "Rozpocznij"
+  },
+  "hero": {
+    "title": "Twoja brama do globalnych możliwości",
+    "subtitle": "Zatwierdzona przez rząd organizacja wysyłkowa dla Japonii, Arabii Saudyjskiej, ZEA i innych"
+  },
+  "services": {
+    "title": "Nasze usługi",
+    "subtitle": "Kompleksowe rozwiązania dla Twojej globalnej kariery"
+  },
+  "contact": {
+    "title": "Skontaktuj się",
+    "subtitle": "Gotowy rozpocząć swoją podróż za granicę?"
+  }
+}

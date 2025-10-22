@@ -1,19 +1,22 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
+import LanguageSelector from "@/components/LanguageSelector";
 import logo from "@/assets/logo.jpg";
 
 const Navigation = () => {
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "/", type: "route" },
-    { name: "Services", href: "#services", type: "hash" },
-    { name: "Countries", href: "#countries", type: "hash" },
-    { name: "Training", href: "#training", type: "hash" },
-    { name: "About", href: "/about", type: "route" },
-    { name: "Contact", href: "#contact", type: "hash" },
+    { name: t("nav.home"), href: "/", type: "route" },
+    { name: t("nav.services"), href: "#services", type: "hash" },
+    { name: t("nav.countries"), href: "#countries", type: "hash" },
+    { name: t("nav.training"), href: "#training", type: "hash" },
+    { name: t("nav.about"), href: "/about", type: "route" },
+    { name: t("nav.contact"), href: "#contact", type: "hash" },
   ];
 
   return (
@@ -26,13 +29,13 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navLinks.map((link) =>
               link.type === "route" ? (
                 <Link
                   key={link.name}
                   to={link.href}
-                  className="text-foreground hover:text-primary transition-colors font-medium"
+                  className="text-foreground hover:text-primary transition-all duration-300 font-medium hover:scale-105"
                 >
                   {link.name}
                 </Link>
@@ -40,15 +43,16 @@ const Navigation = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-foreground hover:text-primary transition-colors font-medium"
+                  className="text-foreground hover:text-primary transition-all duration-300 font-medium hover:scale-105"
                 >
                   {link.name}
                 </a>
               )
             )}
+            <LanguageSelector />
             <Link to="/login">
-              <Button variant="hero" size="lg">
-                Get Started
+              <Button variant="hero" size="lg" className="animate-fade-in">
+                {t("nav.getStarted")}
               </Button>
             </Link>
           </div>
@@ -64,14 +68,14 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 animate-fade-in">
+          <div className="md:hidden py-4 animate-slide-up">
             <div className="flex flex-col space-y-4">
               {navLinks.map((link) =>
                 link.type === "route" ? (
                   <Link
                     key={link.name}
                     to={link.href}
-                    className="text-foreground hover:text-primary transition-colors font-medium py-2"
+                    className="text-foreground hover:text-primary transition-all duration-300 font-medium py-2"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {link.name}
@@ -80,16 +84,19 @@ const Navigation = () => {
                   <a
                     key={link.name}
                     href={link.href}
-                    className="text-foreground hover:text-primary transition-colors font-medium py-2"
+                    className="text-foreground hover:text-primary transition-all duration-300 font-medium py-2"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {link.name}
                   </a>
                 )
               )}
-              <Link to="/login">
+              <div className="pt-2">
+                <LanguageSelector />
+              </div>
+              <Link to="/login" onClick={() => setIsMenuOpen(false)}>
                 <Button variant="hero" size="lg" className="w-full">
-                  Get Started
+                  {t("nav.getStarted")}
                 </Button>
               </Link>
             </div>

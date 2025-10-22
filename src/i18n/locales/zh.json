@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "首页",
+    "services": "服务",
+    "countries": "国家",
+    "training": "培训",
+    "about": "关于",
+    "contact": "联系",
+    "getStarted": "开始"
+  },
+  "hero": {
+    "title": "通往全球机会的门户",
+    "subtitle": "政府批准的日本、沙特阿拉伯、阿联酋等国派遣组织"
+  },
+  "services": {
+    "title": "我们的服务",
+    "subtitle": "为您的全球职业生涯提供全面的解决方案"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "准备好开始您的海外之旅了吗？"
+  }
+}

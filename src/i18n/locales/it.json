@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Servizi",
+    "countries": "Paesi",
+    "training": "Formazione",
+    "about": "Chi siamo",
+    "contact": "Contatti",
+    "getStarted": "Inizia"
+  },
+  "hero": {
+    "title": "Il tuo gateway verso opportunità globali",
+    "subtitle": "Organizzazione di invio approvata dal governo per Giappone, Arabia Saudita, EAU e altro"
+  },
+  "services": {
+    "title": "I nostri servizi",
+    "subtitle": "Soluzioni complete per la tua carriera globale"
+  },
+  "contact": {
+    "title": "Mettiti in contatto",
+    "subtitle": "Pronto per iniziare il tuo viaggio all'estero?"
+  }
+}
