@@ -1,22 +1,24 @@
 import { BookOpen, Award, Globe, GraduationCap } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import japaneseTrainingImg from "@/assets/japanese-training.jpg";
 
 const LanguageTraining = () => {
+  const { t } = useTranslation();
   const programs = [
     {
       icon: BookOpen,
-      title: "JLPT (N5, N4, N3, N2)",
+      title: t("languageTraining.jipt"),
       description: "Complete Japanese Language Proficiency Test preparation",
     },
     {
       icon: Award,
-      title: "SSW (Specified Skilled Worker)",
+      title: t("languageTraining.ssw"),
       description: "Specialized training for skilled worker visas in Japan",
     },
     {
       icon: GraduationCap,
-      title: "TITP (Technical Intern Training Program)",
+      title: t("languageTraining.titp"),
       description: "Technical intern training for hands-on work experience",
     },
   ];
@@ -27,8 +29,8 @@ const LanguageTraining = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Learn Japanese Language with{" "}
-              <span className="text-primary">Advanced Language Institute</span>
+              {t("languageTraining.title")} with{" "}
+              <span className="text-primary">{t("languageTraining.subtitle")}</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Professional Japanese language training programs designed to prepare you for work and
@@ -75,7 +77,7 @@ const LanguageTraining = () => {
               prepared for Japanese workplace culture and communication.
             </p>
             <Button variant="hero" size="lg" className="text-lg px-12">
-              Book a Consultation
+              {t("languageTraining.cta")}
             </Button>
           </div>
         </div>

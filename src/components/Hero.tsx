@@ -1,8 +1,11 @@
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import heroBanner from "@/assets/hero-banner.jpg";
 
 const Hero = () => {
+  const { t } = useTranslation();
+  
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20">
       {/* Background Image with Overlay */}
@@ -25,22 +28,20 @@ const Hero = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-slide-up">
-            Your Gateway to{" "}
-            <span className="text-primary">International Careers</span>
+            {t("hero.title")}
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed animate-slide-up">
-            Legal, transparent, and hassle-free recruitment services for work, study,
-            and travel opportunities worldwide.
+            {t("hero.subtitle")}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-slide-up">
             <Button variant="hero" size="lg" className="text-lg">
-              Explore Opportunities
+              {t("hero.cta")}
               <ArrowRight className="ml-2" />
             </Button>
             <Button variant="outline" size="lg" className="text-lg">
-              Learn More
+              {t("nav.about")}
             </Button>
           </div>
 
@@ -48,19 +49,19 @@ const Hero = () => {
             <div className="flex items-center space-x-3">
               <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
               <span className="text-foreground font-medium">
-                Government Certified
+                {t("about.reason1")}
               </span>
             </div>
             <div className="flex items-center space-x-3">
               <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
               <span className="text-foreground font-medium">
-                Professional Training
+                {t("about.reason3")}
               </span>
             </div>
             <div className="flex items-center space-x-3">
               <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
               <span className="text-foreground font-medium">
-                Ethical Recruitment
+                {t("about.reason2")}
               </span>
             </div>
           </div>

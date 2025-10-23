@@ -49,6 +49,10 @@ i18n
       pl: { translation: pl },
     },
     fallbackLng: 'en',
+    detection: {
+      order: ['navigator', 'htmlTag', 'path', 'subdomain'],
+      caches: ['localStorage', 'cookie'],
+    },
     interpolation: {
       escapeValue: false,
     },

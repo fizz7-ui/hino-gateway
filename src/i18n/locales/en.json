@@ -10,14 +10,133 @@
   },
   "hero": {
     "title": "Your Gateway to Global Opportunities",
-    "subtitle": "Government-approved sending organization for Japan, Saudi Arabia, UAE & More"
+    "subtitle": "Government-approved sending organization for Japan, Saudi Arabia, UAE & More",
+    "cta": "Start Your Journey"
   },
   "services": {
     "title": "Our Services",
-    "subtitle": "Comprehensive solutions for your global career"
+    "subtitle": "Comprehensive solutions for your global career",
+    "recruitment": {
+      "title": "Overseas Recruitment",
+      "desc": "Connect with top employers worldwide across multiple sectors"
+    },
+    "visa": {
+      "title": "Visa Processing",
+      "desc": "Complete visa assistance for work, study, and travel"
+    },
+    "training": {
+      "title": "Skills Training",
+      "desc": "Industry-specific training programs and certifications"
+    },
+    "placement": {
+      "title": "Job Placement",
+      "desc": "Secure employment with verified international employers"
+    }
+  },
+  "whoWeAre": {
+    "title": "Who We Are",
+    "subtitle": "Building bridges between Bangladesh and the world",
+    "desc": "Royal Rolls Manpower is a government-approved Sending Organization dedicated to connecting skilled workers with global opportunities. We specialize in ethical recruitment, comprehensive training, and seamless placement services.",
+    "ceoMessage": "Message From CEO",
+    "ceoText": "At Royal Rolls Manpower, I believe our work is not only about connecting people to jobs abroad, but about changing lives and building bridges between nations. Every worker or student who chooses us carries the hope of a better tomorrow for themselves, their families, and for Bangladesh.",
+    "ceoName": "Mohd Sohel Rana",
+    "ceoTitle": "CEO – Royal Rolls Manpower",
+    "ceoContact": "Contact With CEO"
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "subtitle": "Providing skilled manpower across diverse sectors",
+    "construction": "Construction",
+    "healthcare": "Healthcare",
+    "hospitality": "Hospitality",
+    "manufacturing": "Manufacturing",
+    "it": "IT Services",
+    "general": "General Labor"
+  },
+  "languageTraining": {
+    "title": "Learn Japanese Language",
+    "subtitle": "Advanced Language Institute",
+    "jipt": "JIPT (N5, N4, N3, N2)",
+    "ssw": "SSW (Specified Skilled Worker)",
+    "titp": "TITP (Technical Intern Training Program)",
+    "cta": "Book a Consultation"
+  },
+  "visaServices": {
+    "title": "Our Visa Services",
+    "subtitle": "We Help You Secure Global Work & Travel Visas",
+    "desc": "Explore our full range of visa services designed for workers, students, and travelers. We handle every step from training to placement with full legal support and transparency.",
+    "unskilled": "Unskilled Visa",
+    "hajj": "Hajj and Umrah Visa",
+    "tourist": "Tourist Visa",
+    "skilled": "Skilled Manpower Visa",
+    "student": "Student Japan Visa"
+  },
+  "countries": {
+    "title": "Countries We Serve",
+    "subtitle": "Global opportunities across continents",
+    "japan": {
+      "name": "Japan",
+      "desc": "Advanced economy with high demand for skilled workers"
+    },
+    "uae": {
+      "name": "United Arab Emirates",
+      "desc": "Dynamic market with diverse employment opportunities"
+    },
+    "saudi": {
+      "name": "Saudi Arabia",
+      "desc": "Growing economy seeking international talent"
+    }
+  },
+  "training": {
+    "title": "Training Programs",
+    "subtitle": "Prepare for success with our comprehensive training",
+    "language": "Language Training",
+    "technical": "Technical Skills",
+    "cultural": "Cultural Orientation"
+  },
+  "about": {
+    "title": "About Royal Rolls Manpower",
+    "mission": "Our Mission",
+    "missionText": "To provide transparent, ethical, and professional recruitment services that transform lives and build lasting international partnerships.",
+    "vision": "Our Vision",
+    "visionText": "To be the most trusted and reliable sending organization in Bangladesh, recognized globally for excellence in manpower services.",
+    "whyChoose": "Why Choose Us",
+    "reason1": "Government Approved",
+    "reason2": "100% Legal & Transparent",
+    "reason3": "Comprehensive Training",
+    "reason4": "Post-Placement Support"
   },
   "contact": {
     "title": "Get In Touch",
-    "subtitle": "Ready to start your journey abroad?"
+    "subtitle": "Ready to start your journey abroad?",
+    "name": "Your Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "message": "Your Message",
+    "send": "Send Message",
+    "info": "Contact Information",
+    "address": "Address",
+    "addressText": "Dhaka, Bangladesh"
+  },
+  "footer": {
+    "about": "About Us",
+    "aboutText": "Government-approved sending organization dedicated to connecting skilled workers with global opportunities.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "rights": "All rights reserved"
+  },
+  "login": {
+    "title": "Welcome Back",
+    "subtitle": "Login to access your account",
+    "email": "Email",
+    "password": "Password",
+    "remember": "Remember me",
+    "forgot": "Forgot password?",
+    "submit": "Sign In",
+    "noAccount": "Don't have an account?",
+    "signup": "Sign up"
   }
 }

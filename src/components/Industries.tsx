@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import constructionImg from "@/assets/industries/construction.jpg";
 import healthcareImg from "@/assets/industries/healthcare.jpg";
 import hospitalityImg from "@/assets/industries/hospitality.jpg";
@@ -7,6 +8,7 @@ import generalLaborImg from "@/assets/industries/general-labor.jpg";
 import { Button } from "@/components/ui/button";
 
 const Industries = () => {
+  const { t } = useTranslation();
   const industries = [
     {
       image: constructionImg,
@@ -60,12 +62,10 @@ const Industries = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Industries We <span className="text-primary">Serve</span>
+            {t("industries.title")}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-2">
-            We specialize in legal overseas employment and visa services, offering safe,
-            transparent, and reliable opportunities in Japan, Saudi Arabia, the UAE, Qatar, and
-            beyond.
+            {t("industries.subtitle")}
           </p>
         </div>
 

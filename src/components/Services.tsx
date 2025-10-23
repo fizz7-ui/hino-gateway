@@ -1,13 +1,15 @@
 import { Briefcase, GraduationCap, Plane, FileText } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Services = () => {
+  const { t } = useTranslation();
+  
   const services = [
     {
       icon: Briefcase,
-      title: "Overseas Employment",
-      description:
-        "Connect with skilled and unskilled job opportunities in Japan, Saudi Arabia, UAE, Qatar, and more.",
+      title: t("services.recruitment.title"),
+      description: t("services.recruitment.desc"),
       features: ["Construction Workers", "Factory Staff", "Hospitality", "Technical Jobs"],
     },
     {
@@ -19,9 +21,8 @@ const Services = () => {
     },
     {
       icon: FileText,
-      title: "Visa Processing",
-      description:
-        "Fast and reliable visa services for work, study, tourism, Hajj & Umrah with expert guidance.",
+      title: t("services.visa.title"),
+      description: t("services.visa.desc"),
       features: ["Work Visas", "Tourist Visas", "Hajj & Umrah", "Family Visas"],
     },
     {
@@ -38,10 +39,10 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Our <span className="text-primary">Services</span>
+            {t("services.title")}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive solutions for your international career and travel aspirations
+            {t("services.subtitle")}
           </p>
         </div>
 
