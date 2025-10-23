@@ -1,22 +1,25 @@
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
+  const { t } = useTranslation();
+  
   const contactInfo = [
     {
       icon: Phone,
-      title: "Phone",
+      title: t("contact.callUs"),
       details: ["+880-1234-567890", "+880-9876-543210"],
     },
     {
       icon: Mail,
-      title: "Email",
+      title: t("contact.emailUs"),
       details: ["info@royalrollsmanpower.com", "recruitment@royalrollsmanpower.com"],
     },
     {
       icon: MapPin,
-      title: "Office",
-      details: ["123 Motijheel C/A", "Dhaka, Bangladesh"],
+      title: t("contact.address"),
+      details: ["123 Motijheel C/A", t("contact.addressText")],
     },
     {
       icon: Clock,
@@ -30,10 +33,10 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Get In <span className="text-primary">Touch</span>
+            {t("contact.title")}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to start your international career? Contact us today for a free consultation
+            {t("contact.subtitle")}
           </p>
         </div>
 

@@ -1,7 +1,9 @@
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import logo from "@/assets/logo.jpg";
 
 const Footer = () => {
+  const { t } = useTranslation();
   const quickLinks = [
     { name: "About Us", href: "#about" },
     { name: "Services", href: "#services" },
@@ -24,8 +26,7 @@ const Footer = () => {
           <div>
             <img src={logo} alt="Royal Rolls Manpower" className="h-12 mb-4 brightness-0 invert" />
             <p className="text-background/80 mb-4 leading-relaxed">
-              Government-approved recruitment agency providing legal, transparent, and ethical
-              employment solutions worldwide since 1267.
+              {t("footer.aboutText")}
             </p>
             <div className="flex space-x-4">
               <a
@@ -57,7 +58,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+            <h3 className="text-xl font-bold mb-4">{t("footer.quickLinks")}</h3>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
@@ -74,7 +75,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Our Services</h3>
+            <h3 className="text-xl font-bold mb-4">{t("footer.services")}</h3>
             <ul className="space-y-2">
               {services.map((service) => (
                 <li key={service.name}>
@@ -91,9 +92,9 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
+            <h3 className="text-xl font-bold mb-4">{t("contact.info")}</h3>
             <ul className="space-y-3 text-background/80">
-              <li>123 Motijheel C/A, Dhaka, Bangladesh</li>
+              <li>123 Motijheel C/A, {t("contact.addressText")}</li>
               <li>+880-1234-567890</li>
               <li>info@royalrollsmanpower.com</li>
               <li className="pt-2 text-sm">Sunday - Thursday: 9AM - 6PM</li>
@@ -103,7 +104,7 @@ const Footer = () => {
 
         <div className="border-t border-background/20 pt-8 text-center">
           <p className="text-background/70">
-            © {new Date().getFullYear()} Royal Rolls Manpower Service. All rights reserved.
+            © {new Date().getFullYear()} Royal Rolls Manpower Service. {t("footer.rights")}
           </p>
         </div>
       </div>

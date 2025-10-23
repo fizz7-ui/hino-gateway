@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -9,6 +10,7 @@ import Footer from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
 const Login = () => {
+  const { t } = useTranslation();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -29,15 +31,15 @@ const Login = () => {
               <ArrowLeft size={16} className="mr-2" />
               Back to Home
             </Link>
-            <CardTitle className="text-3xl font-bold">Welcome Back</CardTitle>
+            <CardTitle className="text-3xl font-bold">{t("login.title")}</CardTitle>
             <CardDescription className="text-base">
-              Sign in to your Royal Rolls Manpower account
+              {t("login.subtitle")}
             </CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
-                <Label htmlFor="email">Email Address</Label>
+                <Label htmlFor="email">{t("login.email")}</Label>
                 <Input
                   id="email"
                   type="email"
@@ -51,9 +53,9 @@ const Login = () => {
               
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
-                  <Label htmlFor="password">Password</Label>
+                  <Label htmlFor="password">{t("login.password")}</Label>
                   <Link to="/forgot-password" className="text-sm text-primary hover:underline">
-                    Forgot password?
+                    {t("login.forgot")}
                   </Link>
                 </div>
                 <Input
@@ -68,14 +70,14 @@ const Login = () => {
               </div>
 
               <Button type="submit" variant="hero" size="lg" className="w-full">
-                Sign In
+                {t("login.submit")}
               </Button>
             </form>
 
             <div className="mt-6 text-center text-sm text-muted-foreground">
-              Don't have an account?{" "}
+              {t("login.noAccount")}{" "}
               <Link to="/register" className="text-primary hover:underline font-semibold">
-                Create an account
+                {t("login.signup")}
               </Link>
             </div>
           </CardContent>
