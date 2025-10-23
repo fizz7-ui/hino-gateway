@@ -156,3 +156,19 @@ All colors MUST be HSL.
     }
   }
 }
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #bb0230;
+}
+
+::selection {
+  color: white;
+  background: #bb0230;
+}
+.CEO {
+  display: flex;
+  justify-content: center;
+}
+.visaCards {
+  height: 275.25px;
+}

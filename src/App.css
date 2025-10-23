@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #bb0230;
+}
+
+::selection {
+  color: white;
+  background: #bb0230;
+}
