@@ -238,5 +238,24 @@
     "submit": "サインイン",
     "noAccount": "アカウントをお持ちでないですか？",
     "signup": "サインアップ"
+  },
+  "countriesList": {
+    "subtitle": "国リスト",
+    "title": "希望の国を選択",
+    "description": "世界中のプレミアム目的地への雇用とビザサービスを提供しています",
+    "japan": "日本",
+    "saudiArabia": "サウジアラビア",
+    "uae": "アラブ首長国連邦",
+    "qatar": "カタール",
+    "kuwait": "クウェート",
+    "bahrain": "バーレーン",
+    "oman": "オマーン",
+    "southKorea": "韓国",
+    "malaysia": "マレーシア",
+    "singapore": "シンガポール",
+    "romania": "ルーマニア",
+    "poland": "ポーランド",
+    "popular": "人気",
+    "moreDestinations": "アジア、ヨーロッパ、中東全域の他の多くの目的地"
   }
 }

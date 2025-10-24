@@ -138,5 +138,24 @@
     "submit": "Sign In",
     "noAccount": "Don't have an account?",
     "signup": "Sign up"
+  },
+  "countriesList": {
+    "subtitle": "OUR COUNTRIES LIST",
+    "title": "Select the Country of Your Choice",
+    "description": "We provide employment and visa services to premier destinations worldwide",
+    "japan": "Japan",
+    "saudiArabia": "Saudi Arabia",
+    "uae": "United Arab Emirates",
+    "qatar": "Qatar",
+    "kuwait": "Kuwait",
+    "bahrain": "Bahrain",
+    "oman": "Oman",
+    "southKorea": "South Korea",
+    "malaysia": "Malaysia",
+    "singapore": "Singapore",
+    "romania": "Romania",
+    "poland": "Poland",
+    "popular": "Popular",
+    "moreDestinations": "And many more destinations across Asia, Europe, and the Middle East"
   }
 }
