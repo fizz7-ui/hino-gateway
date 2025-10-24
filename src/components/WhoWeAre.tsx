@@ -150,6 +150,7 @@ import ceoImage from "@/assets/ceo-portrait.jpg";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "./ui/reveal";
 import { RevealText } from "./ui/revealText";
+import dd from '@/assets/whoweare.png'
 
 const WhoWeAre = () => {
   const { t } = useTranslation();
@@ -218,46 +219,12 @@ const WhoWeAre = () => {
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className= "">
             <Reveal>
-              <div className="space-y-6">
-                <Reveal>
-                  <div className="bg-card border-2 border-border rounded-xl p-6 hover:border-primary transition-colors">
-                    <Shield className="text-primary mb-4" size={40} />
-                    <h4 className="font-bold text-xl mb-2">
-                      Government Certified
-                    </h4>
-                    <p className="text-sm text-muted-foreground">
-                      Officially approved Sending Organization by Japan &
-                      Bangladesh
-                    </p>
-                  </div>
-                </Reveal>
-
-                <Reveal>
-                  <div className="bg-card border-2 border-border rounded-xl p-6 hover:border-primary transition-colors">
-                    <Users className="text-primary mb-4" size={40} />
-                    <h4 className="font-bold text-xl mb-2">15,000+ Placed</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Successfully placed workers across 15+ countries worldwide
-                    </p>
-                  </div>
-                </Reveal>
-              </div>
+               <img src={dd} alt=""  />
             </Reveal>
 
-            <Reveal>
-              <div className="pt-12">
-                <div className="bg-card border-2 border-border rounded-xl p-6 hover:border-primary transition-colors">
-                  <Globe className="text-primary mb-4" size={40} />
-                  <h4 className="font-bold text-xl mb-2">Global Network</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Trusted partnerships with employers in Japan, Middle East,
-                    and beyond
-                  </p>
-                </div>
-              </div>
-            </Reveal>
+            
           </div>
         </div>
 

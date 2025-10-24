@@ -254,7 +254,7 @@ const VisaServices = () => {
               We handle every step from training to placement with full legal support and
               transparency. Our expert team ensures a hassle-free visa processing experience.
             </p>
-            <Button variant="hero" size="lg" className="text-lg px-12">
+            <Button variant="hero" size="lg" className="text-lg px-12 md:text-sm max-md:text-sm">
               Start Your Visa Application
             </Button>
           </div>

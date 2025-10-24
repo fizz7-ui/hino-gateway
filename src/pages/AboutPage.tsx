@@ -2,7 +2,6 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Shield, Users, Globe, TrendingUp, Award, Heart } from "lucide-react";
 import japanImg from "@/assets/countries/japan.jpg";
-import uaeImg from "@/assets/countries/uae.jpg";
 import saudiImg from "@/assets/countries/saudi.jpg";
 import { Button } from "@/components/ui/button";
 
@@ -54,18 +53,7 @@ const AboutPage = () => {
         "Hospitality & Food Service",
       ],
     },
-    {
-      image: uaeImg,
-      name: "United Arab Emirates",
-      description:
-        "Major destination for skilled professionals and service workers. Dubai and Abu Dhabi offer excellent opportunities across multiple sectors with tax-free income.",
-      opportunities: [
-        "Hospitality & Tourism",
-        "Retail & Sales",
-        "Construction",
-        "IT & Technology",
-      ],
-    },
+    
     {
       image: saudiImg,
       name: "Saudi Arabia",

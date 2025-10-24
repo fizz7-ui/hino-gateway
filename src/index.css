@@ -160,7 +160,9 @@ All colors MUST be HSL.
   color: white;
   background: #bb0230;
 }
-
+.countryCard{ 
+  padding: 30px;
+}
 ::selection {
   color: white;
   background: #bb0230;

@@ -132,7 +132,8 @@ const Training = () => {
         {/* CARDS CONTAINER */}
         <div
           className="
-            flex flex-col md:flex-row flex-wrap 
+            grid grid-flow-col md:grid-flow-row max-md:grid-flow-row
+            lg:grid-flow-col
             justify-center items-center gap-6 md:gap-8
           "
         >
