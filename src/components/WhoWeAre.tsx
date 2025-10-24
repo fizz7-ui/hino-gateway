@@ -161,7 +161,26 @@ const WhoWeAre = () => {
     "Government-approved Sending Organization (SO)",
     "Remittance and economic empowerment support",
   ];
-
+    const testimonials = [
+    {
+      name: "Abdulkhakiq",
+      location: "OMAN",
+      text: "We recruited drivers and house mates, and they have been extremely reliable and hardworking. Their dedication makes day-to-day operations much smoother.",
+      rating: 5
+    },
+    {
+      name: "Ahmed Al-Rashid",
+      location: "SAUDI ARABIA",
+      text: "Royal Rolls provided us with excellent construction workers who were well-trained and professional. Their support throughout the process was exceptional.",
+      rating: 5
+    },
+    {
+      name: "Yuki Tanaka",
+      location: "JAPAN",
+      text: "The workers we hired through Royal Rolls were not only skilled but also culturally prepared. The language training they received made integration seamless.",
+      rating: 5
+    }
+  ];
   return (
     <section id="who-we-are" className="py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -227,7 +246,7 @@ const WhoWeAre = () => {
             
           </div>
         </div>
-
+                
         {/* CEO Message */}
         <div className="CEO">
           <Reveal>

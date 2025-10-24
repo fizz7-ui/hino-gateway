@@ -10,6 +10,8 @@ import Training from "@/components/Training";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ChoseUS from "@/components/WhyChoseUs";
+import Certificates from "@/components/Certificates";
 
 const Index = () => {
   return (
@@ -23,8 +25,10 @@ const Index = () => {
       <VisaServices />
       <Countries />
       <Training />
-      <About />
-      <Contact />
+      {/* <About /> */}
+      <ChoseUS/>
+      <Certificates/>
+      {/* <Contact /> */}
       <Footer />
     </div>
   );
