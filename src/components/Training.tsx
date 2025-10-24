@@ -84,7 +84,7 @@
 
 // export default Training;
 import { MapPinned, PlaneTakeoff, Ticket, ReceiptText } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { Reveal } from "@/components/ui/reveal";
 import { RevealText } from "@/components/ui/revealText";
 
@@ -94,32 +94,28 @@ const Training = () => {
       icon: MapPinned,
       title: "Taking Care",
       description: "Immigration & Visa Process",
-      duration: "3-6 months",
     },
     {
       icon: PlaneTakeoff,
       title: "Explore the World",
       description: "Affordable Travel Packages",
-      duration: "2-4 months",
     },
     {
       icon: Ticket,
       title: "Book Your Flight",
       description: "Reliable & Hassle-Free Ticketing",
-      duration: "2-4 weeks",
     },
     {
       icon: ReceiptText,
       title: "Apply Online",
       description: "Quick & Easy Visa Application",
-      duration: "1-3 months",
     },
   ];
 
   return (
     <section id="training" className="py-24 bg-gradient-subtle">
       <div className="container mx-auto px-4 text-center">
-        {/* OUTER HEADER */}
+        {/* HEADER */}
         <div className="mb-16 flex flex-col items-center justify-center">
           <RevealText>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -133,30 +129,36 @@ const Training = () => {
           </Reveal>
         </div>
 
-        {/* CARDS GRID */}
-        <div className="flex gap-8 justify-center w-full overflow-x-auto pb-4">
+        {/* CARDS CONTAINER */}
+        <div
+          className="
+            flex flex-col md:flex-row flex-wrap 
+            justify-center items-center gap-6 md:gap-8
+          "
+        >
           {programs.map((program, index) => (
             <Reveal key={index}>
               <Card
-                className="group flex-shrink-0 transition-all duration-300 rounded-2xl bg-white border border-border 
-                   hover:border-primary/40 hover:shadow-lg hover:shadow-primary/10 flex items-center p-6"
+                className="group transition-all duration-300 rounded-2xl bg-white border border-border 
+                           hover:border-primary/40 hover:shadow-lg hover:shadow-primary/10 
+                           flex items-center p-6 justify-start"
                 style={{
                   minWidth: "299px",
                   maxWidth: "330px",
                   height: "198px",
                 }}
               >
-                {/* LEFT ICON */}
+                {/* ICON */}
                 <div className="flex-shrink-0 p-5 bg-primary/10 rounded-full group-hover:bg-primary/20 flex items-center justify-center">
                   <program.icon className="text-primary" size={50} />
                 </div>
 
-                {/* RIGHT CONTENT */}
-                <CardContent className="flex flex-col justify-center ml-6 gap-3">
+                {/* CONTENT */}
+                <CardContent className="flex flex-col justify-center ml-6 gap-2">
                   <CardTitle className="text-left text-sm text-gray-400 font-semibold">
                     {program.title}
                   </CardTitle>
-                  <p className="text-muted-foreground text-left text-sm md:text-base text-slate-900 leading-relaxed overflow-hidden">
+                  <p className="text-muted-foreground text-left text-sm md:text-base text-slate-900 leading-relaxed">
                     {program.description}
                   </p>
                 </CardContent>
@@ -165,8 +167,8 @@ const Training = () => {
           ))}
         </div>
 
-        {/* OUTER FOOTER NOTE */}
-        <div className="mt-16 flex justify-center ">
+        {/* FOOTER NOTE */}
+        <div className="mt-16 flex justify-center">
           <Reveal>
             <div className="inline-block p-8 bg-primary/5 border-2 border-primary/20 rounded-2xl text-center">
               <p className="text-foreground text-lg font-semibold mb-2">
