@@ -15,6 +15,7 @@ import ContactPage from "./pages/ContactPage";
 import JapanPage from "./pages/JapanPage";
 import SaudiArabiaPage from "./pages/SaudiArabiaPage";
 import JobSeekersPage from "./pages/JobSeekersPage";
+import BlogPage from "./pages/BlogPage";
 import ApplicationPage from "./pages/ApplicationPage";
 import NotFound from "./pages/NotFound";
 
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/countries/saudi-arabia" element={<SaudiArabiaPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/job-seekers" element={<JobSeekersPage />} />
+          <Route path="/blog" element={<BlogPage />} />
           <Route path="/application" element={<ApplicationPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

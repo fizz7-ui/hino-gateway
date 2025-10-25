@@ -165,24 +165,26 @@ const JobSeekersPage = () => {
               </RevealText>
             </div>
 
-            {/* Work Visas Grid */}
-            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Work Visas - Alternating Layout */}
+            <div className="space-y-12 max-w-6xl mx-auto">
               {workVisas.map((visa, index) => (
                 <Reveal key={index}>
-                  <div className="bg-card border-2 border-border rounded-xl p-8 hover:border-primary transition-all duration-300">
-                    <h3 className="text-2xl font-bold mb-3">{visa.title}</h3>
-                    <p className="text-muted-foreground mb-6">{visa.description}</p>
-                    <ul className="space-y-3 mb-6">
-                      {visa.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start space-x-3">
-                          <CheckCircle2 className="text-primary flex-shrink-0 mt-1" size={18} />
-                          <span className="text-muted-foreground text-sm">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <Button variant="hero" className="w-full" onClick={() => setIsModalOpen(true)}>
-                      Book a Consultation
-                    </Button>
+                  <div className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 items-center`}>
+                    <div className="flex-1 bg-card border-2 border-border rounded-xl p-8 hover:border-primary transition-all duration-300">
+                      <h3 className="text-2xl font-bold mb-3">{visa.title}</h3>
+                      <p className="text-muted-foreground mb-6">{visa.description}</p>
+                      <ul className="space-y-3 mb-6">
+                        {visa.features.map((feature, idx) => (
+                          <li key={idx} className="flex items-start space-x-3">
+                            <CheckCircle2 className="text-primary flex-shrink-0 mt-1" size={18} />
+                            <span className="text-muted-foreground text-sm">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <Button variant="hero" className="w-full" onClick={() => setIsModalOpen(true)}>
+                        Book a Consultation
+                      </Button>
+                    </div>
                   </div>
                 </Reveal>
               ))}
