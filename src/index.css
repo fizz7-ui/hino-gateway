@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+*{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
@@ -175,8 +178,8 @@ All colors MUST be HSL.
   display: flex;
   justify-content: center;
 }
-.visaCards {
+.visaCards {  
   height: 275.25px;
 }
- 
+
  

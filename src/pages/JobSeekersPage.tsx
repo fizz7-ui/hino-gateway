@@ -7,6 +7,7 @@ import { RevealText } from "@/components/ui/revealText";
 import { useState } from "react";
 import ContactModal from "@/components/ContactModal";
 import { Link } from "react-router-dom";
+import { Center } from "@/components/ui/center";
 
 const JobSeekersPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -157,12 +158,16 @@ const JobSeekersPage = () => {
         <section className="py-24 bg-gradient-subtle">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <RevealText>
-                <h1 className="text-4xl md:text-6xl font-bold mb-4">Latest Jobs & Openings</h1>
+              <Center>
+                <RevealText>
+                <h1 className="text-4xl md:text-6xl font-bold mb-4">
+                  Latest Jobs & Openings
+                  </h1>
               </RevealText>
-              <RevealText>
+              </Center>
+              <Reveal>
                 <p className="text-xl text-muted-foreground">Stay updated with our latest opportunities</p>
-              </RevealText>
+              </Reveal>
             </div>
 
             {/* Work Visas - Grid Layout */}
@@ -242,14 +247,18 @@ const JobSeekersPage = () => {
         <section className="py-24 bg-gradient-subtle">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
+                <Center>
+                  <h2 className="text-4xl md:text-5xl font-bold mb-6">
               <RevealText>
-                <h2 className="text-4xl md:text-5xl font-bold mb-6">Find your dream job in Japan</h2>
+                  Find your dream job in Japan
               </RevealText>
-              <RevealText>
+                  </h2>
+                </Center>
+              <Reveal>
                 <p className="text-xl text-muted-foreground mb-12">
                   Experience the power of innovation firsthand and discover how Beta's solutions can revolutionize your lending processes. Schedule a personalized demo now to see our advanced machine learning algorithms and cloud-based platform in action.
                 </p>
-              </RevealText>
+              </Reveal>
               <Reveal>
                 <Link to="/application">
                   <Button variant="hero" size="lg" className="text-lg">

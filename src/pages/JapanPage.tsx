@@ -1,18 +1,24 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Users, Star } from "lucide-react";
+import { Users, Star, ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/ui/reveal";
 import { RevealText } from "@/components/ui/revealText";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ContactModal from "@/components/ContactModal";
+import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
+  CarouselApi,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { useTranslation } from "react-i18next";
+import dd from '@/assets/dd.png'
+
+import ceoImage from "@/assets/ceo-portrait.jpg";
 
 const JapanPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -29,13 +35,48 @@ const JapanPage = () => {
       ]
     }
   ];
-
+  const { t } = useTranslation();
+    const slides = [
+   {
+    image: "https://royalrollsmanpower.com/wp-content/uploads/2025/08/2-1.jpg",
+    badge: "Government Approved Sending Organization (SO)",
+    title: "Your Career, Our Priority",
+    subtitle: "Royal Rolls Manpower – RL 1264. Trusted manpower recruiting agencies in Bangladesh",
+  },
+  {
+    image: "https://royalrollsmanpower.com/wp-content/uploads/2025/08/sl-1.jpg",
+    badge: "Work Abroad, Study Overseas, Or Visit With Ease",
+    title: "Work & Study Visa In Japan With 100% Guidance",
+    subtitle: "JLPT Training, SSW & TITP Programs - Your gateway to Japanese employment",
+  },
+ 
+  
+  
+  {
+    image: "https://royalrollsmanpower.com/wp-content/uploads/2025/08/HS1-2-1024x768-1.jpg",
+    badge: "Advanced Language Institute",
+    title: "Sending Organization(SO) Approved Japan Language Center",
+    subtitle: "Get N5/N4 Certified & Work In Japan",
+  },
+ 
+  ];
   const languageFeatures = [
     "JLPT & JFT-Basic training",
     "Cultural immersion workshops",
     "Mock interviews in Japanese"
   ];
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  useEffect(() => {
+    if (!api) return;
 
+    setCurrent(api.selectedScrollSnap());
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
+   
   const partnerBenefits = [
     "Govt. Approved SO – Legal and transparent recruitment for Japan",
     "Skilled & Unskilled Placement – From professionals to general workers, we cover multiple industries",
@@ -50,7 +91,21 @@ const JapanPage = () => {
     "Post-deployment support",
     "Reporting and transparency"
   ];
-
+  const highlights = [
+    "N5 & N4 Japanese language training",
+    "Work and student visa processing for Japan",
+    "Legal manpower export to KSA, UAE, Qatar & more",
+    "Government-approved Sending Organization (SO)",
+    "Remittance and economic empowerment support",
+  ];
+  const imagesO = [
+    {img: "https://royalrollsmanpower.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-28-at-1.28.31-PM-1024x576.jpeg"},
+    {img: "https://royalrollsmanpower.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-28-at-1.28.31-PM-1-576x1024.jpeg"},
+    {img: "https://royalrollsmanpower.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-30-at-11.52.11-AM-1024x768.jpeg"},
+    {img:"https://royalrollsmanpower.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-30-at-11.52.10-AM-1024x769.jpeg"},
+    {img:"https://royalrollsmanpower.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-30-at-11.52.10-AM-1-1024x768.jpeg"},
+    {img:"https://royalrollsmanpower.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-30-at-11.52.10-AM-2.jpeg"}
+  ];
   const collaborationItems = [
     "MoU Templates",
     "Placement Procedure Step-by-Step"
@@ -61,52 +116,94 @@ const JapanPage = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-20 py-24 bg-gradient-subtle">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <RevealText>
-              <h1 className="text-4xl md:text-6xl font-bold mb-4">Japan Manpower & Visa Partner</h1>
-            </RevealText>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            {/* Image Gallery - Left */}
-            <Reveal>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-4">
-                  <div className="bg-muted rounded-xl h-40" />
-                  <div className="bg-muted rounded-xl h-32" />
+       <section id="home" className="relative min-h-screen overflow-hidden">
+      <Carousel
+        setApi={setApi}
+        opts={{
+          loop: true,
+        }}
+        plugins={[
+          Autoplay({
+            delay: 5000,
+          }),
+        ]}
+        className="w-full h-screen overflow-hidden"
+      >
+        <CarouselContent>
+          {slides.map((slide, index) => (
+            <CarouselItem key={index}>
+              <div className="relative min-h-screen flex items-center pt-20">
+                {/* Background Image with Overlay */}
+                <div className="absolute inset-0 z-0">
+                  <img
+                    src={slide.image}
+                    alt={`Slide ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/70 to-black/70"></div>
                 </div>
-                <div className="space-y-4 pt-8">
-                  <div className="bg-muted rounded-xl h-32" />
-                  <div className="bg-muted rounded-xl h-40" />
+
+                {/* Content */}
+                <div className="container mx-auto px-4 relative z-10">
+                  <div className="max-w-3xl">
+                    <Reveal>
+                      <div className="inline-block mb-6 px-4 py-2 bg-primary/40 border border-primary/100 rounded-full">
+                        <p className="text-primary text-slate-50 font-semibold text-sm">
+                          {slide.badge}
+                        </p>
+                      </div>
+                    </Reveal>
+
+                    <Reveal>
+                      <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-foreground text-slate-100">
+                        {slide.title}
+                      </h1>
+                    </Reveal>
+
+                    <Reveal>
+                      <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed text-slate-300">
+                        {slide.subtitle}
+                      </p>
+                    </Reveal>
+
+                    <Reveal>
+                      <div className="flex flex-col sm:flex-row gap-4 mb-12">
+                        <Button variant="hero" size="lg" className="text-lg">
+                          {t("hero.cta")}
+                          <ArrowRight
+                           className="ml-2" />
+                        </Button>
+                        <Button variant="outline" size="lg" className="text-lg text-slate-50">
+                          {t("nav.about")}
+                        </Button>
+                      </div>
+                    </Reveal>
+
+                    
+                  </div>
                 </div>
               </div>
-            </Reveal>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
 
-            {/* Content - Right */}
-            <Reveal>
-              <div>
-                <div className="inline-block mb-4 px-4 py-2 bg-primary/10 border border-primary rounded-full">
-                  <p className="text-primary font-semibold text-sm">
-                    Sending Organization (SO) Approved by the Governments of Japan & Bangladesh
-                  </p>
-                </div>
-                <h2 className="text-3xl font-bold mb-4">Royal Rolls Manpower is one of the most reputable manpower recruiting agencies in Bangladesh</h2>
-                <p className="text-muted-foreground mb-6">
-                  Officially recognized as a Sending Organization (SO) by both Japan and Bangladesh, we have been providing secure and legal overseas job opportunities since 2024. Along with recruitment, we also run the Advanced Language Institute to teach the Japanese language, helping candidates prepare for a brighter future in Japan.
-                </p>
-                <p className="text-muted-foreground mb-6">
-                  Through our Japan-approved training center and licensed recruitment services, we prepare workers to succeed abroad.
-                </p>
-                <Button variant="hero" onClick={() => setIsModalOpen(true)}>
-                  Partner With Us
-                </Button>
-              </div>
-            </Reveal>
-          </div>
+        {/* Custom Carousel Indicators - Bottom Right */}
+        <div className="absolute bottom-8 right-8 z-20 flex gap-2">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => api?.scrollTo(index)}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                current === index
+                  ? "bg-primary w-8"
+                  : "bg-white/50 hover:bg-white/75"
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
         </div>
-      </section>
+      </Carousel>
+    </section>
 
       {/* CEO's Message */}
       <section className="py-24">
@@ -179,7 +276,63 @@ const JapanPage = () => {
           </div>
         </div>
       </section>
+      {/* Who Are We */}
+          <section id="who-we-are" className="py-24 bg-background">
+      <div className="container mx-auto px-4">
+        <Reveal>
+          <div className="text-center mb-12">
+            <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">
+              {t("whoWeAre.title")}
+            </p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              Royal Rolls Manpower | Your Trusted{" "}
+              <span className="text-primary">Manpower & Visa Partner</span>
+            </h2>
+          </div>
+        </Reveal>
 
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-20">
+          <div className= "">
+            <Reveal>
+               <img src={dd} alt=""  />
+            </Reveal>
+
+            
+          </div>
+          <Reveal>
+            <>
+              <div>
+              <h3 className="text-2xl font-bold mb-6">
+                Sending Organization (SO) Approved by the Governments of Japan &
+                Bangladesh
+              </h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Royal Rolls Manpower is one of the most reputable manpower
+                recruiting agencies in Bangladesh. Officially recognized as a
+                Sending Organization (SO) by both Japan and Bangladesh, we
+                provide secure and legal overseas job opportunities.Royal Rolls Manpower is one of the most reputable manpower recruiting agencies in Bangladesh. Officially recognized as a Sending Organization (SO) by both Japan and Bangladesh, we have been providing secure and legal overseas job opportunities since 2024. Along with recruitment, we also run the Advanced Language Institute to teach the Japanese language, helping candidates prepare for a brighter future in Japan.
+              </p>
+               
+              <p className="text-muted-foreground mb-8 leading-relaxed">
+                Through our Japan-approved training center and licensed recruitment services, we prepare workers to succeed abroad.
+              </p>
+
+              
+
+               
+            </div>
+             
+            
+            </>
+          </Reveal>
+
+           
+        </div>
+                
+        {/* CEO Message */}
+                
+      </div>
+    </section>
       {/* Our Vision & Value */}
       <section className="py-24 bg-gradient-subtle">
         <div className="container mx-auto px-4">
@@ -206,9 +359,9 @@ const JapanPage = () => {
               {/* Left Side - Programs & Training */}
               <Reveal>
                 <div className="bg-card border-2 border-border rounded-2xl p-8">
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="p-3 bg-primary/10 rounded-lg">
-                      <Users className="text-primary" size={28} />
+                  <div className="flex flex-col justify-start text-left items-left gap-3 mb-6">
+                    <div className="p-3">
+                      <img src="https://royalrollsmanpower.com/wp-content/uploads/2025/08/advance-language-ins.png" alt="" width={200}/>
                     </div>
                     <h3 className="text-2xl font-bold">Programs & Training</h3>
                   </div>
@@ -229,14 +382,20 @@ const JapanPage = () => {
 
               {/* Right Side - Japanese Language */}
               <Reveal>
-                <div className="bg-primary text-primary-foreground rounded-2xl p-8">
+               <>
+                <div className="bg-primary align-middle flex flex-col justify-center text-primary-foreground rounded-2xl p-8" style={{height: "406px"}}>
                   <h3 className="text-2xl font-bold mb-6">Japanese Language Preparation</h3>
+                  <div className="flex">
                   <ul className="space-y-3">
                     {languageFeatures.map((feature, idx) => (
                       <li key={idx} className="text-sm">{feature}</li>
                     ))}
                   </ul>
+                     
+                  </div>
                 </div>
+                
+               </>
               </Reveal>
             </div>
 
@@ -265,7 +424,7 @@ const JapanPage = () => {
                   <div className="inline-block p-3 bg-primary/10 rounded-lg mb-4">
                     <Star className="text-primary" size={32} />
                   </div>
-                  <div className="text-4xl font-bold mb-2">★★★★★</div>
+                  <div className="text-4xl font-bold mb-2 text-yellow-500">★★★★★</div>
                   <p className="text-muted-foreground">Testimonials from alumni</p>
                 </div>
               </Reveal>
@@ -280,18 +439,18 @@ const JapanPage = () => {
           <div className="max-w-5xl mx-auto">
             <Carousel className="w-full">
               <CarouselContent>
-                <CarouselItem className="md:basis-1/3">
-                  <div className="bg-muted rounded-xl h-64" />
-                </CarouselItem>
-                <CarouselItem className="md:basis-1/3">
-                  <div className="bg-muted rounded-xl h-64" />
-                </CarouselItem>
-                <CarouselItem className="md:basis-1/3">
-                  <div className="bg-muted rounded-xl h-64" />
-                </CarouselItem>
-                <CarouselItem className="md:basis-1/3">
-                  <div className="bg-muted rounded-xl h-64" />
-                </CarouselItem>
+                {imagesO.map((item, index) => (
+      <CarouselItem
+        key={index}
+        className="flex-none flex  justify-center items-center"
+      >
+        <img
+          src={item.img} // ✅ use .img here
+          alt={`Certificate ${index + 1}`}
+          className="h-[400px] w-auto object-contain rounded-xl shadow-md border cursor-pointer hover:scale-[1.03] transition-all"
+        />
+      </CarouselItem>
+    ))}
               </CarouselContent>
               <CarouselPrevious />
               <CarouselNext />
@@ -323,7 +482,7 @@ const JapanPage = () => {
 
               {/* Image - Right */}
               <Reveal>
-                <div className="bg-muted rounded-xl h-96" />
+                <img loading="lazy" decoding="async" width="1024" height="768" src="https://royalrollsmanpower.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-27-at-6.45.10-PM-1-1024x768.jpeg" alt="" className="kb-img wp-image-899" srcSet="https://royalrollsmanpower.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-27-at-6.45.10-PM-1-1024x768.jpeg 1024w, https://royalrollsmanpower.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-27-at-6.45.10-PM-1-300x225.jpeg 300w, https://royalrollsmanpower.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-27-at-6.45.10-PM-1-768x576.jpeg 768w, https://royalrollsmanpower.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-27-at-6.45.10-PM-1.jpeg 1280w" sizes="auto, (max-width: 1024px) 100vw, 1024px" />
               </Reveal>
             </div>
           </div>
@@ -382,3 +541,7 @@ const JapanPage = () => {
 };
 
 export default JapanPage;
+function setCurrent(arg0: any) {
+  throw new Error("Function not implemented.");
+}
+

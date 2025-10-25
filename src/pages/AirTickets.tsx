@@ -319,13 +319,13 @@ const AirTickets = () => {
         <Reveal>
           <div className="container mx-auto max-w-4xl text-center">
             <div className="flex justify-center">
-            <RevealText>
               <h2 className="text-3xl text-center
               font-bold mb-6">
+            <RevealText>
                 <>
                 Book Your Ticket Today</>
-              </h2>
             </RevealText>
+              </h2>
 
             </div>
             <p className="text-xl text-muted-foreground mb-8">

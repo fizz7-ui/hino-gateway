@@ -11,26 +11,71 @@
   "hero": {
     "title": "Your Gateway to Global Opportunities",
     "subtitle": "Government-approved sending organization for Japan, Saudi Arabia, UAE & More",
-    "cta": "Start Your Journey"
+    "cta": "Start Your Journey",
+    "badge": "Government Approved Sending Organization",
+    "slide1": {
+      "badge": "Government Approved Sending Organization",
+      "title": "Your Career, Our Priority",
+      "subtitle": "Royal Rolls Manpower – RL 1264. Trusted manpower recruiting agencies in Bangladesh"
+    },
+    "slide2": {
+      "badge": "Work Abroad, Study Overseas, Or Visit With Ease",
+      "title": "Work & Study Visa In Japan With 100% Guidance",
+      "subtitle": "JLPT Training, SSW & TITP Programs - Your gateway to Japanese employment"
+    },
+    "slide3": {
+      "badge": "MIDDLE EAST CAREERS",
+      "title": "Saudi Arabia & UAE",
+      "subtitle": "Premium job opportunities in construction, healthcare, and hospitality sectors"
+    },
+    "slide4": {
+      "badge": "Travel With Image Travel & Tours",
+      "title": "Image Travel & Tours Explore, Experience, Enjoy",
+      "subtitle": "Connect with international employers across 15+ countries"
+    },
+    "slide5": {
+      "badge": "BUILD YOUR FUTURE IN JAPAN",
+      "title": "Work & Study Visa In Japan",
+      "subtitle": "100% Guidance & Authorized Support for Skilled Workers"
+    },
+    "slide6": {
+      "badge": "SKILLED WORKERS, GLOBAL CAREERS",
+      "title": "Royal Rolls Manpower – Reliable Recruitment for Russia",
+      "subtitle": "Russia Authorized – Secure overseas opportunities for skilled professionals"
+    },
+    "slide7": {
+      "badge": "ADVANCED LANGUAGE INSTITUTE",
+      "title": "Train With Native Instructors",
+      "subtitle": "Get N5/N4 Certified & Work In Japan"
+    },
+    "slide8": {
+      "badge": "SECURE, LEGAL & HASSLE-FREE PROCESS",
+      "title": "Professional Guidance for Visas In Saudi Arabia",
+      "subtitle": "Trust us for smooth, legal, and timely visa solutions for all your travel needs"
+    }
   },
   "services": {
     "title": "Our Services",
     "subtitle": "Comprehensive solutions for your global career",
     "recruitment": {
       "title": "Overseas Recruitment",
-      "desc": "Connect with top employers worldwide across multiple sectors"
+      "desc": "Connect with top employers worldwide across multiple sectors",
+      "features": ["Construction Workers", "Factory Staff", "Hospitality", "Technical Jobs"]
+    },
+    "studyAbroad": {
+      "title": "Study Abroad Programs",
+      "desc": "Comprehensive student visa services and guidance for pursuing education internationally.",
+      "features": ["University Admissions", "Student Visas", "Education Counseling", "Scholarship Assistance"]
     },
     "visa": {
       "title": "Visa Processing",
-      "desc": "Complete visa assistance for work, study, and travel"
+      "desc": "Complete visa assistance for work, study, and travel",
+      "features": ["Work Visas", "Tourist Visas", "Hajj & Umrah", "Family Visas"]
     },
-    "training": {
-      "title": "Skills Training",
-      "desc": "Industry-specific training programs and certifications"
-    },
-    "placement": {
-      "title": "Job Placement",
-      "desc": "Secure employment with verified international employers"
+    "travel": {
+      "title": "Travel & Tour Packages",
+      "desc": "Complete travel solutions including air ticketing and customized tour packages worldwide.",
+      "features": ["Air Ticketing", "Tour Packages", "Travel Insurance", "Itinerary Planning"]
     }
   },
   "whoWeAre": {
@@ -41,7 +86,26 @@
     "ceoText": "At Royal Rolls Manpower, I believe our work is not only about connecting people to jobs abroad, but about changing lives and building bridges between nations. Every worker or student who chooses us carries the hope of a better tomorrow for themselves, their families, and for Bangladesh.",
     "ceoName": "Mohd Sohel Rana",
     "ceoTitle": "CEO – Royal Rolls Manpower",
-    "ceoContact": "Contact With CEO"
+    "ceoContact": "Contact With CEO",
+    "mainTitle": "Royal Rolls Manpower | Your Trusted Manpower & Visa Partner",
+    "soApproved": "Sending Organization (SO) Approved by the Governments of Japan & Bangladesh",
+    "description1": "Royal Rolls Manpower is one of the most reputable manpower recruiting agencies in Bangladesh. Officially recognized as a Sending Organization (SO) by both Japan and Bangladesh, we provide secure and legal overseas job opportunities.",
+    "description2": "Through our Japan-approved training center and licensed recruitment services, we prepare workers to succeed abroad.",
+    "description3": "Our mission goes beyond job placement: we empower people to become self-reliant, send remittances ethically, and contribute to national growth.",
+    "highlights": [
+      "N5 & N4 Japanese language training",
+      "Work and student visa processing for Japan",
+      "Legal manpower export to KSA, UAE, Qatar & more",
+      "Government-approved Sending Organization (SO)",
+      "Remittance and economic empowerment support"
+    ],
+    "bookConsultation": "Book a Consultation",
+    "visionPoints": [
+      "To prepare our people with the right skills and mindset to succeed abroad.",
+      "To create trusted partnerships with employers worldwide.",
+      "To ensure that every step, from training to placement, is safe, secure, and dignified."
+    ],
+    "ceoCommitment": "I am proud of the trust we have earned as a government-approved Sending Organization, and I am committed to making Royal Rolls a symbol of reliability, professionalism, and opportunity for all who walk through our doors."
   },
   "industries": {
     "title": "Industries We Serve",
@@ -51,7 +115,23 @@
     "hospitality": "Hospitality",
     "manufacturing": "Manufacturing",
     "it": "IT Services",
-    "general": "General Labor"
+    "general": "General Labor",
+    "positions": [
+      "House Maid",
+      "Salesman",
+      "IT",
+      "Caregiver",
+      "Agriculture",
+      "Drivers",
+      "Nurses",
+      "Construction Workers",
+      "Hotel Boys",
+      "Welders",
+      "Electricians",
+      "Plumbers"
+    ],
+    "highDemandSectors": "We provide manpower to a wide range of high-demand sectors across the globe:",
+    "bookConsultation": "Book a Consultation"
   },
   "languageTraining": {
     "title": "Learn Japanese Language",
@@ -59,17 +139,45 @@
     "jipt": "JIPT (N5, N4, N3, N2)",
     "ssw": "SSW (Specified Skilled Worker)",
     "titp": "TITP (Technical Intern Training Program)",
-    "cta": "Book a Consultation"
+    "cta": "Book a Consultation",
+    "description": "Professional Japanese language training programs designed to prepare you for work and life in Japan",
+    "jiptDesc": "Complete Japanese Language Proficiency Test preparation",
+    "sswDesc": "Specialized training for skilled worker visas in Japan",
+    "titpDesc": "Technical intern training for hands-on work experience",
+    "journeyTitle": "Start Your Journey to Japan Today",
+    "journeyDesc": "Our comprehensive language programs are designed by experts to ensure you're fully prepared for Japanese workplace culture and communication."
   },
   "visaServices": {
     "title": "Our Visa Services",
     "subtitle": "We Help You Secure Global Work & Travel Visas",
-    "desc": "Explore our full range of visa services designed for workers, students, and travelers. We handle every step from training to placement with full legal support and transparency.",
-    "unskilled": "Unskilled Visa",
-    "hajj": "Hajj and Umrah Visa",
-    "tourist": "Tourist Visa",
-    "skilled": "Skilled Manpower Visa",
-    "student": "Student Japan Visa"
+    "desc": "We help you secure global work & travel visas with full legal support and transparency. Launch your global career with secure job placement support.",
+    "unskilled": {
+      "title": "Unskilled Visa",
+      "desc": "Work permits for general labor positions across multiple industries"
+    },
+    "skilled": {
+      "title": "Skilled Manpower Visa",
+      "desc": "Specialized work visas for skilled professionals and technicians"
+    },
+    "student": {
+      "title": "Student Japan Visa",
+      "desc": "Study permits for Japanese universities and language schools"
+    },
+    "hajj": {
+      "title": "Hajj and Umrah Visa",
+      "desc": "Religious pilgrimage visas for Saudi Arabia with full support"
+    },
+    "tourist": {
+      "title": "Tourist Visa",
+      "desc": "Travel visas for leisure and tourism to destinations worldwide"
+    },
+    "workFamily": {
+      "title": "Work & Family Visas",
+      "desc": "Employment and dependent visas for UAE, Qatar, and Middle East"
+    },
+    "exploreTitle": "Explore Our Full Range of Visa Services",
+    "exploreDesc": "We handle every step from training to placement with full legal support and transparency. Our expert team ensures a hassle-free visa processing experience.",
+    "startApplication": "Start Your Visa Application"
   },
   "countries": {
     "title": "Countries We Serve",
@@ -88,11 +196,25 @@
     }
   },
   "training": {
-    "title": "Training Programs",
-    "subtitle": "Prepare for success with our comprehensive training",
-    "language": "Language Training",
-    "technical": "Technical Skills",
-    "cultural": "Cultural Orientation"
+    "title": "Extra Services",
+    "subtitle": "Preparing you for international success journey",
+    "takingCare": {
+      "title": "Taking Care",
+      "desc": "Immigration & Visa Process"
+    },
+    "exploreWorld": {
+      "title": "Explore the World",
+      "desc": "Affordable Travel Packages"
+    },
+    "bookFlight": {
+      "title": "Book Your Flight",
+      "desc": "Reliable & Hassle-Free Ticketing"
+    },
+    "applyOnline": {
+      "title": "Apply Online",
+      "desc": "Quick & Easy Visa Application"
+    },
+    "placementAssistance": "All training programs include placement assistance"
   },
   "about": {
     "title": "About Royal Rolls Manpower",
@@ -100,11 +222,26 @@
     "missionText": "To provide transparent, ethical, and professional recruitment services that transform lives and build lasting international partnerships.",
     "vision": "Our Vision",
     "visionText": "To be the most trusted and reliable sending organization in Bangladesh, recognized globally for excellence in manpower services.",
-    "whyChoose": "Why Choose Us",
+    "whyChoose": "Why Choose Royal Rolls",
+    "subtitle": "Your trusted partner in international recruitment since 1267",
     "reason1": "Government Approved",
     "reason2": "100% Legal & Transparent",
     "reason3": "Comprehensive Training",
-    "reason4": "Post-Placement Support"
+    "reason4": "Post-Placement Support",
+    "stats": {
+      "approved": "Since 1267",
+      "placed": "10,000+",
+      "countries": "15+",
+      "success": "98%"
+    },
+    "features": [
+      "Government-approved Sending Organization (SO) by Bangladesh & Japan",
+      "Transparent and ethical recruitment process",
+      "Comprehensive pre-departure training programs",
+      "End-to-end visa processing support",
+      "Legal and hassle-free documentation",
+      "Post-placement support and guidance"
+    ]
   },
   "contact": {
     "title": "Get In Touch",
@@ -116,7 +253,11 @@
     "send": "Send Message",
     "info": "Contact Information",
     "address": "Address",
-    "addressText": "Dhaka, Bangladesh"
+    "addressText": "Dhaka, Bangladesh",
+    "callUs": "Call Us",
+    "emailUs": "Email Us",
+    "workingHours": "Working Hours",
+    "scheduleConsultation": "Schedule a Consultation"
   },
   "footer": {
     "about": "About Us",
@@ -126,7 +267,19 @@
     "legal": "Legal",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "rights": "All rights reserved"
+    "rights": "All rights reserved",
+    "links": [
+      "About Us",
+      "Services",
+      "Training Programs",
+      "Countries"
+    ],
+    "serviceLinks": [
+      "Overseas Employment",
+      "Study Abroad",
+      "Visa Processing",
+      "Travel & Tours"
+    ]
   },
   "login": {
     "title": "Welcome Back",
@@ -157,5 +310,79 @@
     "poland": "Poland",
     "popular": "Popular",
     "moreDestinations": "And many more destinations across Asia, Europe, and the Middle East"
+  },
+  "whyChooseUs": {
+    "title": "WHY ROYAL ROLLS?",
+    "mainTitle": "Trusted Manpower Experts in Bangladesh for Global Opportunities",
+    "description1": "Our company has extensive experience spanning over 15 years and holds all necessary government-approved licenses and certifications, ensuring complete legal compliance. We specialize in developing a highly skilled workforce through comprehensive training programs conducted by experienced Bangladeshi and Japanese instructors and technician trainers proficient in Japanese language and technology. Additionally, we are partnered with leading government training centers in Bangladesh, further enhancing the quality and credibility of our training initiatives.",
+    "description2": "Our mission is to deploy the most competent professionals across all trades to Japan, fully approved and recognized by both the Bangladeshi and Japanese governments. We carefully match the supply of skilled workers with Japan's labor demands, always prioritizing the needs, expectations, and respect of our counterparts. At every stage, we maintain the highest standards of quality, accountability, and professionalism, fostering strong, lasting partnerships between the two countries.",
+    "description3": "Royal Rolls Manpower is a trusted bridge between Bangladesh and global opportunities. From Japan to the Gulf, we train, place, and support workers every step of the way.",
+    "stats": {
+      "happyClients": "3k+",
+      "successRate": "99%",
+      "experience": "11+"
+    },
+    "statLabels": {
+      "happyClients": "Happy Clients Served",
+      "successRate": "Visa & Services Success Rate",
+      "experience": "Years Agency Experience"
+    },
+    "testimonials": {
+      "abdulkhakiq": {
+        "name": "Abdulkhakiq",
+        "location": "OMAN",
+        "text": "We recruited drivers and house mates, and they have been extremely reliable and hardworking. Their dedication makes day-to-day operations much smoother."
+      },
+      "ahmed": {
+        "name": "Ahmed Al-Rashid",
+        "location": "SAUDI ARABIA",
+        "text": "Royal Rolls provided us with excellent construction workers who were well-trained and professional. Their support throughout the process was exceptional."
+      },
+      "yuki": {
+        "name": "Yuki Tanaka",
+        "location": "JAPAN",
+        "text": "The workers we hired through Royal Rolls were not only skilled but also culturally prepared. The language training they received made integration seamless."
+      }
+    }
+  },
+  "certificates": {
+    "title": "Our Certificates"
+  },
+  "contactModal": {
+    "title": "Book a Consultation",
+    "fullName": "Full Name",
+    "phoneNumber": "Phone Number",
+    "emailAddress": "Email Address",
+    "selectService": "Select Service",
+    "message": "Message",
+    "contactUs": "Contact Us",
+    "enterFullName": "Enter your full name",
+    "enterPhone": "Enter phone number",
+    "enterEmail": "Enter your email",
+    "chooseService": "Choose a service",
+    "tellRequirements": "Tell us about your requirements...",
+    "services": [
+      "Air Tickets",
+      "Work Visas",
+      "Student Visa",
+      "Hajj And Umrah Visas",
+      "Tour Package",
+      "Okala",
+      "Language Admission"
+    ],
+    "countryCodes": {
+      "bangladesh": "Bangladesh",
+      "japan": "Japan",
+      "saudiArabia": "Saudi Arabia",
+      "uae": "UAE",
+      "qatar": "Qatar",
+      "kuwait": "Kuwait",
+      "jordan": "Jordan",
+      "malaysia": "Malaysia",
+      "russia": "Russia",
+      "usaCanada": "USA/Canada",
+      "uk": "UK",
+      "australia": "Australia"
+    }
   }
 }
