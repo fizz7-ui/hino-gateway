@@ -1,4 +1,4 @@
-import { Shield, Users, Globe } from "lucide-react";
+import { Shield, UsersRound, TrendingUp, Calendar } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import ceoImage from "@/assets/ceo-portrait.jpg";
 import { Button } from "@/components/ui/button";
@@ -17,6 +17,11 @@ import { Handshake } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
 const ChoseUS = () => {
   const { t } = useTranslation();
+  const stats = [
+    { icon: UsersRound, label: "Happy Clients Served", value: "3k+" },
+    { icon: TrendingUp, label: "Visa & Services Success Rate", value: "99%" },
+    { icon: Calendar, label: "Years Agency Experience", value: "11+" },
+  ];
   const highlights = [
     "N5 & N4 Japanese language training",
     "Work and student visa processing for Japan",
@@ -51,10 +56,15 @@ const ChoseUS = () => {
     },
   ];
   return (
-    <section id="who-we-are" className="py-24 bg-background">
+    <section id="who-we-are" className="py-24 bg-background ">
       <div className="  grid grid-flow-col   mx-auto px-2 gap-4">
         <Reveal>
-          <img src={image} alt=""className="max-md:hidden md:hidden sm:hidden" style={{ width: "5000px !important" }} />
+          <img
+            src={image}
+            alt=""
+            className=" max-md:hidden"
+            style={{ width: "5000px !important" }}
+          />
         </Reveal>
         <div
           className="grid-flow-row justify-start text-left "
@@ -63,12 +73,13 @@ const ChoseUS = () => {
           <div className="mb-20">
             <Reveal>
               <div className="text-left mb-12">
-                <p className="text-primary font-semibold text-sm md:text-center uppercase tracking-wider mb-3">
+                <p className="text-primary sm:text-left
+                 font-semibold text-sm max-md:text-left uppercase tracking-wider mb-3">
                   WHY ROYAL ROLLS?
                 </p>
 
                 <RevealText>
-                  <h2 className="text-3xl max-md:text-1xl md:text-center max-md:w-80 sm:w-80 md:w-full sm:text-xl text-left md:text-3xl font-bold mb-6">
+                  <h2 className="text-3xl max-md:text-1xl max-md:text-center max-md:w-80 sm:w-80 md:w-full sm:text-xl text-left md:text-3xl font-bold mb-6">
                     Trusted Manpower Experts in Bangladesh{" "}
                     <span className="text-primary">
                       for <br />
@@ -79,10 +90,12 @@ const ChoseUS = () => {
               </div>
             </Reveal>
 
-            <div className="max-w-6xl   mx-auto space-y-6 text-muted-foreground leading-relaxed"> </div>
+            <div className="max-w-6xl   mx-auto space-y-6 text-muted-foreground leading-relaxed">
+              {" "}
+            </div>
             <Reveal>
               <>
-                <p className="text-xl  max-md:text-md sm:text-sm text-left sm:w-96 md:w-full md:text-center  max-md:w-96 md:text-xl text-slate-500">
+                <p className="text-xl  max-md:text-md sm:text-sm text-left sm:w-96 md:w-full max-md:text-center  max-md:w-96 md:text-xl text-slate-500">
                   Our company has extensive experience spanning over 15 years
                   and holds all necessary government-approved licenses and
                   certifications, ensuring complete legal compliance. We
@@ -95,7 +108,7 @@ const ChoseUS = () => {
                   our training initiatives.
                 </p>
 
-                <p className="text-xl max-md:text-md sm:text-sm text-left sm:w-96  md:w-full  md:text-center max-md:w-96 md:text-xl text-slate-500">
+                <p className="text-xl max-md:text-md sm:text-sm text-left sm:w-96  md:w-full  max-md:text-center max-md:w-96 md:text-xl text-slate-500">
                   Our mission is to deploy the most competent professionals
                   across all trades to Japan, fully approved and recognized by
                   both the Bangladeshi and Japanese governments. We carefully
@@ -109,7 +122,7 @@ const ChoseUS = () => {
 
                 <br />
 
-                <p className="font-semibold max-md:text-md sm:text-sm text-left md:text-center md:w-full sm:w-96 max-md:w-96 md:text-xl text-foreground text-xl ">
+                <p className="font-semibold max-md:text-md sm:text-sm text-left max-md:text-center md:w-full sm:w-96 max-md:w-96 md:text-xl text-foreground text-xl ">
                   Royal Rolls Manpower is a trusted bridge between Bangladesh
                   and global opportunities. From Japan to the Gulf, we train,
                   place, and support workers every step of the way.
@@ -136,123 +149,81 @@ const ChoseUS = () => {
       </div>
       <div className="">
         <div className="">
-          <div className="grid grid-cols-1 lg:grid-cols-2 max-w-1-xl max-h-90 mx-auto gap-0">
-            {/* Testimonial Carousel */}
-            <div className="bg-card border-2 border-border rounded-none p-8 flex flex-col justify-between">
-              <Carousel
-                opts={{
-                  align: "start",
-                  loop: true,
-                }}
-                plugins={[
-                  Autoplay({
-                    delay: 5000,
-                  }),
-                ]}
-                className="w-full flex-grow"
+         <div className="flex flex-col items-center w-full max-w-5xl mx-auto gap-12 px-4">
+  {/* Testimonial Carousel */}
+  <div className="w-full bg-card border-2 border-border rounded-xl p-8 flex flex-col justify-center items-center">
+    <Carousel
+      opts={{
+        align: "start",
+        loop: true,
+      }}
+      plugins={[Autoplay({ delay: 5000 })]}
+      className="w-full"
+    >
+      <CarouselContent>
+        {testimonials.map((testimonial, index) => (
+          <CarouselItem key={index}>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full text-center md:text-left">
+              {/* Avatar */}
+              <div
+                className="rounded-full bg-muted overflow-hidden flex-shrink-0"
+                style={{ width: "15rem", height: "15rem" }}
               >
-                <CarouselContent>
-                  {testimonials.map((testimonial, index) => (
-                    <CarouselItem key={index}>
-                      <div className="grid grid-flow-col md:grid-flow-row max-md:grid-flow-row
-            lg:grid-flow-col
-            justify-center items-center">
-                        {/* Bigger avatar */}
-                        <div
-                          className=" rounded-full bg-muted flex-shrink-0 overflow-hidden"
-                          style={{ width: "15rem", height: "15rem" }}
-                        >
-                          <div className="w-full h-full">
-                            <img src={testimonial.image} alt="" />
-                          </div>
-                        </div>
+                <img src={testimonial.image} alt="" className="w-full h-full object-cover" />
+              </div>
 
-                        <div>
-                          <div className="flex space-x-1 mb-3">
-                            {[...Array(testimonial.rating)].map((_, i) => (
-                              <span key={i} className="text-yellow-500">
-                                ★
-                              </span>
-                            ))}
-                          </div>
-
-                          <p className="text-foreground leading-relaxed mb-4">
-                            "{testimonial.text}"
-                          </p>
-
-                          <div>
-                            <p className="font-bold text-foreground">
-                              {testimonial.name}
-                            </p>
-                            <p className="text-primary text-sm font-semibold">
-                              {testimonial.location}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </CarouselItem>
+              {/* Testimonial Text */}
+              <div className="flex flex-col justify-center gap-2">
+                <div className="flex justify-center md:justify-start space-x-1 mb-3">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <span key={i} className="text-yellow-500 text-lg">★</span>
                   ))}
-                </CarouselContent>
-
-                {/* Arrows bottom-left */}
-                <div className="flex justify-start gap-2 mt-6">
-                  <CarouselPrevious className="static translate-y-0" />
-                  <CarouselNext className="static translate-y-0" />
                 </div>
-              </Carousel>
+
+                <p className="text-foreground leading-relaxed mb-4 max-w-xl mx-auto md:mx-0">
+                  "{testimonial.text}"
+                </p>
+
+                <div>
+                  <p className="font-bold text-foreground">{testimonial.name}</p>
+                  <p className="text-primary text-sm font-semibold">{testimonial.location}</p>
+                </div>
+              </div>
             </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
 
-            {/* Statistics Panel */}
-            <div className="bg-gradient-red p-8 text-primary-foreground space-y-6 rounded-none flex flex-col justify-center">
-              <Reveal>
-                <div style={{width:"53rem"}}className="flex items-start max-w-1-x  pb-6 border-b border-white/20">
-                  <div className="text-4xl pr-6 ">👍</div>
-                  <div className="border-l border-white/20 pl-6 ">
-                    <RevealText>
-                      <p className="text-4xl font-bold mb-2">3K+</p>
-                    </RevealText>
-                    <RevealText>
-                      <p className="text-primary-foreground/90">
-                        Happy Clients Served
-                      </p>
-                    </RevealText>
-                  </div>
-                </div>
-              </Reveal>
+      {/* Arrows */}
+      <div className="flex justify-center gap-4 mt-6">
+        <CarouselPrevious className="static translate-y-0" />
+        <CarouselNext className="static translate-y-0" />
+      </div>
+    </Carousel>
+  </div>
 
-              <Reveal>
-                <div className="flex items-start space-x-6 pb-6 border-b border-white/20">
-                  <div className="text-4xl ">💡</div>
-                  <div className="border-l border-white/20 pl-6 ">
-                    <RevealText>
-                      <p className="text-4xl font-bold mb-2">99%</p>
-                    </RevealText>
-                    <RevealText>
-                      <p className="text-primary-foreground/90">
-                        Visa & Service Success Rate
-                      </p>
-                    </RevealText>
-                  </div>
-                </div>
-              </Reveal>
-
-              <Reveal>
-                <div className="flex items-start space-x-6 pb-6 border-b border-white/20">
-                  <div className="text-4xl ">📅</div>
-                  <div className="border-l border-white/20 pl-6 ">
-                    <RevealText>
-                      <p className="text-4xl font-bold mb-2">15+</p>
-                    </RevealText>
-                    <RevealText>
-                      <p className="text-primary-foreground/90">
-                        Years Agency Experience
-                      </p>
-                    </RevealText>
-                  </div>
-                </div>
-              </Reveal>
-            </div>
+  {/* Statistics Panel */}
+ {/* Statistics Panel */}
+{/* Statistics Panel */}
+<section className="w-full py-16 bg-background flex justify-center">
+  <div className="flex justify-center w-full max-w-5xl flex-wrap gap-8">
+    {stats.map((stat, index) => (
+      <Reveal key={index}>
+        <div className="text-center p-6 bg-gradient-subtle border-2 border-border rounded-xl hover:border-primary transition-all duration-300 hover:shadow-red h-[222.5px] flex flex-col justify-center items-center">
+          <div className="inline-block p-4 bg-primary/10 rounded-xl mb-4">
+            <stat.icon className="text-primary" size={32} />
           </div>
+          <div className="text-3xl font-bold text-primary mb-2">{stat.value}</div>
+          <div className="text-sm text-muted-foreground font-medium">{stat.label}</div>
+        </div>
+      </Reveal>
+    ))}
+  </div>
+</section>
+
+
+</div>
+
         </div>
       </div>
     </section>

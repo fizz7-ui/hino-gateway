@@ -144,7 +144,7 @@
 // };
 
 // export default WhoWeAre;
-import { Shield, Users, Globe } from "lucide-react";
+import { Shield, Users, Globe, CheckIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import ceoImage from "@/assets/ceo-portrait.jpg";
 import { Button } from "@/components/ui/button";
@@ -154,6 +154,7 @@ import dd from '@/assets/whoweare.png'
 
 const WhoWeAre = () => {
   const { t } = useTranslation();
+   
   const highlights = [
     "N5 & N4 Japanese language training",
     "Work and student visa processing for Japan",
@@ -306,25 +307,33 @@ const WhoWeAre = () => {
                     </RevealText>
 
                     <ul className="space-y-2 pl-6">
-                      <li>
+                      <li className="flex">
                         <RevealText>
-                          <span className="text-primary mr-2">•</span>
+                          <div className="flex gap-3 items-center">
+                          <CheckIcon className="text-primary"/>
                           To prepare our people with the right skills and
                           mindset to succeed abroad.
+                          </div>
                         </RevealText>
                       </li>
                       <li>
                         <RevealText>
-                          <span className="text-primary mr-2">•</span>
+                          <div className="flex gap-3 items-center">
+                          <CheckIcon className="text-primary"/>
+                           
                           To create trusted partnerships with employers
                           worldwide.
+                          </div>
+                         
                         </RevealText>
                       </li>
                       <li>
                         <RevealText>
-                          <span className="text-primary mr-2">•</span>
-                          To ensure that every step, from training to placement,
+                          <div className="flex gap-3 items-center">
+                          <CheckIcon className="text-primary"/>
+                         To ensure that every step, from training to placement,
                           is safe, secure, and dignified.
+                          </div>
                         </RevealText>
                       </li>
                     </ul>
