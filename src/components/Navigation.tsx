@@ -23,7 +23,6 @@ const Navigation = () => {
     { name: t("nav.training"), href: "#training", type: "hash" },
     { name: t("nav.about"), href: "/about", type: "route" },
     { name: "Job Seekers", href: "/job-seekers", type: "route" },
-    { name: "Blog", href: "/blog", type: "route" },
   ];
 
   const countryLinks = [
