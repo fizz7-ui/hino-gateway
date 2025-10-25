@@ -153,7 +153,7 @@ const Hero = () => {
   }, [api]);
 
   return (
-    <section id="home" className="relative min-h-screen">
+    <section id="home" className="relative min-h-screen overflow-hidden">
       <Carousel
         setApi={setApi}
         opts={{
@@ -164,7 +164,7 @@ const Hero = () => {
             delay: 5000,
           }),
         ]}
-        className="w-full h-screen"
+        className="w-full h-screen overflow-hidden"
       >
         <CarouselContent>
           {slides.map((slide, index) => (

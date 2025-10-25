@@ -57,13 +57,16 @@ const Navigation = () => {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden text-foreground"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Mobile Menu Button & Language Selector */}
+          <div className="md:hidden flex items-center gap-3">
+            <LanguageSelector />
+            <button
+              className="text-foreground"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -91,9 +94,6 @@ const Navigation = () => {
                   </a>
                 )
               )}
-              <div className="pt-2">
-                <LanguageSelector />
-              </div>
               <Link to="/login" onClick={() => setIsMenuOpen(false)}>
                 <Button variant="hero" size="lg" className="w-full">
                   {t("nav.getStarted")}
