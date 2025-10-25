@@ -54,7 +54,7 @@ const ChoseUS = () => {
     <section id="who-we-are" className="py-24 bg-background">
       <div className="  grid grid-flow-col   mx-auto px-2 gap-4">
         <Reveal>
-          <img src={image} alt=""className="max-md:grid-flow-row md:grid-flow-row sm:hidden" style={{ width: "5000px !important" }} />
+          <img src={image} alt=""className="max-md:hidden md:hidden sm:hidden" style={{ width: "5000px !important" }} />
         </Reveal>
         <div
           className="grid-flow-row justify-start text-left "
