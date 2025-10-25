@@ -63,12 +63,12 @@ const ChoseUS = () => {
           <div className="mb-20">
             <Reveal>
               <div className="text-left mb-12">
-                <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">
+                <p className="text-primary font-semibold text-sm md:text-center uppercase tracking-wider mb-3">
                   WHY ROYAL ROLLS?
                 </p>
 
                 <RevealText>
-                  <h2 className="text-3xl max-md:text-1xl max-md:w-80 sm:w-80 sm:text-xl text-left md:text-1xl font-bold mb-6">
+                  <h2 className="text-3xl max-md:text-1xl md:text-center max-md:w-80 sm:w-80 md:w-full sm:text-xl text-left md:text-3xl font-bold mb-6">
                     Trusted Manpower Experts in Bangladesh{" "}
                     <span className="text-primary">
                       for <br />
@@ -79,10 +79,10 @@ const ChoseUS = () => {
               </div>
             </Reveal>
 
-            <div className="max-w-6xl   mx-auto space-y-6 text-muted-foreground leading-relaxed"></div>
+            <div className="max-w-6xl   mx-auto space-y-6 text-muted-foreground leading-relaxed"> </div>
             <Reveal>
               <>
-                <p className="text-xl  max-md:text-md sm:text-sm text-left sm:w-96 max-md:w-96 md:text-xl text-slate-500">
+                <p className="text-xl  max-md:text-md sm:text-sm text-left sm:w-96 md:w-full md:text-center  max-md:w-96 md:text-xl text-slate-500">
                   Our company has extensive experience spanning over 15 years
                   and holds all necessary government-approved licenses and
                   certifications, ensuring complete legal compliance. We
@@ -95,7 +95,7 @@ const ChoseUS = () => {
                   our training initiatives.
                 </p>
 
-                <p className="text-xl max-md:text-md sm:text-sm text-left sm:w-96 max-md:w-96 md:text-xl text-slate-500">
+                <p className="text-xl max-md:text-md sm:text-sm text-left sm:w-96  md:w-full  md:text-center max-md:w-96 md:text-xl text-slate-500">
                   Our mission is to deploy the most competent professionals
                   across all trades to Japan, fully approved and recognized by
                   both the Bangladeshi and Japanese governments. We carefully
@@ -109,7 +109,7 @@ const ChoseUS = () => {
 
                 <br />
 
-                <p className="font-semibold max-md:text-md sm:text-sm text-left sm:w-96 max-md:w-96 md:text-xl text-foreground text-xl ">
+                <p className="font-semibold max-md:text-md sm:text-sm text-left md:text-center md:w-full sm:w-96 max-md:w-96 md:text-xl text-foreground text-xl ">
                   Royal Rolls Manpower is a trusted bridge between Bangladesh
                   and global opportunities. From Japan to the Gulf, we train,
                   place, and support workers every step of the way.
