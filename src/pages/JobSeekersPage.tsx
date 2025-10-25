@@ -1,41 +1,15 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Phone, Mail, MapPin, Clock, CheckCircle2, FileText, Search, Send, Briefcase } from "lucide-react";
+import { CheckCircle2, FileText, Search, Send, Briefcase, UserCheck, ClipboardList, FileCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/ui/reveal";
 import { RevealText } from "@/components/ui/revealText";
 import { useState } from "react";
 import ContactModal from "@/components/ContactModal";
+import { Link } from "react-router-dom";
 
 const JobSeekersPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const contactInfo = [
-    {
-      icon: Phone,
-      title: "Call Us",
-      details: ["+8801630234538", "+8801688505444"],
-    },
-    {
-      icon: Mail,
-      title: "Email Us",
-      details: ["royalrollsmanpower@yahoo.com"],
-    },
-    {
-      icon: MapPin,
-      title: "Address",
-      details: ["36 Purana Paltan Lane, Rokeya Mansion (3rd Floor), Dhaka-1000", "Bangladesh"],
-    },
-    {
-      icon: Clock,
-      title: "Working Hours",
-      details: ["Sunday - Thursday: 9AM - 6PM", "Friday - Saturday: Closed"],
-    },
-  ];
-
-  const cardWidth = 280;
-  const gap = 24;
-  const totalWidth = cardWidth * 4 + gap * 3;
 
   const workVisas = [
     {
@@ -132,13 +106,13 @@ const JobSeekersPage = () => {
       description: "Recruitment begins with advertisements in national newspapers and on social media platforms to reach eligible and interested candidates."
     },
     {
-      icon: FileText,
+      icon: ClipboardList,
       step: "2",
       title: "Candidate Registration",
       description: "Applicants register by submitting required documents, including: Valid passport, Curriculum Vitae (CV), Educational certificates, Recent photographs. This step officially enlists candidates into the recruitment pipeline."
     },
     {
-      icon: Search,
+      icon: UserCheck,
       step: "3",
       title: "Primary Interview & Screening",
       description: "Our recruitment team with Japanese employer's representative conducts initial interviews to assess: Educational background, Work experience, Skill level, Suitability for overseas employment. Shortlisted candidates move forward to training."
@@ -150,7 +124,7 @@ const JobSeekersPage = () => {
       description: "Selected candidates undergo intensive training in: Basic Japanese language- N4 level, Relevant job skills, Japanese workplace culture, food habit and etiquette"
     },
     {
-      icon: CheckCircle2,
+      icon: FileCheck,
       step: "5",
       title: "Language Proficiency & Skill Test",
       description: "Candidates appear for: Japanese Language Proficiency Test (JLPT or JFT-Basic), Industry-specific skill exams (e.g., construction, caregiving, etc.). Passing these is essential for SSW eligibility."
@@ -191,24 +165,26 @@ const JobSeekersPage = () => {
               </RevealText>
             </div>
 
-            {/* Work Visas Grid */}
-            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Work Visas - Alternating Layout */}
+            <div className="space-y-12 max-w-6xl mx-auto">
               {workVisas.map((visa, index) => (
                 <Reveal key={index}>
-                  <div className="bg-card border-2 border-border rounded-xl p-8 hover:border-primary transition-all duration-300">
-                    <h3 className="text-2xl font-bold mb-3">{visa.title}</h3>
-                    <p className="text-muted-foreground mb-6">{visa.description}</p>
-                    <ul className="space-y-3 mb-6">
-                      {visa.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start space-x-3">
-                          <CheckCircle2 className="text-primary flex-shrink-0 mt-1" size={18} />
-                          <span className="text-muted-foreground text-sm">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <Button variant="hero" className="w-full" onClick={() => setIsModalOpen(true)}>
-                      Book a Consultation
-                    </Button>
+                  <div className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 items-center`}>
+                    <div className="flex-1 bg-card border-2 border-border rounded-xl p-8 hover:border-primary transition-all duration-300">
+                      <h3 className="text-2xl font-bold mb-3">{visa.title}</h3>
+                      <p className="text-muted-foreground mb-6">{visa.description}</p>
+                      <ul className="space-y-3 mb-6">
+                        {visa.features.map((feature, idx) => (
+                          <li key={idx} className="flex items-start space-x-3">
+                            <CheckCircle2 className="text-primary flex-shrink-0 mt-1" size={18} />
+                            <span className="text-muted-foreground text-sm">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <Button variant="hero" className="w-full" onClick={() => setIsModalOpen(true)}>
+                        Book a Consultation
+                      </Button>
+                    </div>
                   </div>
                 </Reveal>
               ))}
@@ -230,21 +206,36 @@ const JobSeekersPage = () => {
               </RevealText>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-              {applicationSteps.map((step, index) => (
-                <Reveal key={index}>
-                  <div className="bg-card border-2 border-border rounded-xl p-6 hover:border-primary transition-all duration-300">
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="p-3 bg-primary/10 rounded-lg">
-                        <step.icon className="text-primary" size={24} />
+            <div className="max-w-4xl mx-auto">
+              <div className="relative">
+                {/* Vertical Line */}
+                <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-primary/20"></div>
+
+                {/* Steps */}
+                <div className="space-y-8">
+                  {applicationSteps.map((step, index) => (
+                    <Reveal key={index}>
+                      <div className="relative flex gap-6">
+                        {/* Icon Circle */}
+                        <div className="relative z-10 flex-shrink-0">
+                          <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center border-4 border-background shadow-lg">
+                            <step.icon className="text-primary-foreground" size={28} />
+                          </div>
+                        </div>
+
+                        {/* Content Card */}
+                        <div className="flex-1 bg-card border-2 border-border rounded-xl p-6 hover:border-primary transition-all duration-300">
+                          <div className="flex items-center gap-3 mb-3">
+                            <div className="text-2xl font-bold text-primary">Step {step.step}</div>
+                            <h3 className="text-xl font-bold">{step.title}</h3>
+                          </div>
+                          <p className="text-muted-foreground">{step.description}</p>
+                        </div>
                       </div>
-                      <div className="text-3xl font-bold text-primary">Step {step.step}</div>
-                    </div>
-                    <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-                    <p className="text-muted-foreground text-sm">{step.description}</p>
-                  </div>
-                </Reveal>
-              ))}
+                    </Reveal>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -262,65 +253,13 @@ const JobSeekersPage = () => {
                 </p>
               </RevealText>
               <Reveal>
-                <Button variant="hero" size="lg" className="text-lg" onClick={() => setIsModalOpen(true)}>
-                  Start Your Application
-                </Button>
+                <Link to="/application">
+                  <Button variant="hero" size="lg" className="text-lg">
+                    Start Your Application
+                  </Button>
+                </Link>
               </Reveal>
             </div>
-          </div>
-        </section>
-
-        {/* Map and Contact Section */}
-        <section className="py-24">
-          <div className="flex justify-center items-center text-center">
-            <div className="text-center items-center justify-center align-middle mb-12 px-4">
-              <h2 className="text-4xl text-center flex justify-center md:text-5xl font-bold mb-4">
-                <RevealText>Get In Touch</RevealText>
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Ready to start your journey abroad?
-              </p>
-            </div>
-          </div>
-
-          {/* Map */}
-          <div className="mx-auto mb-12" style={{ width: `${totalWidth}px`, height: "400px" }}>
-            <Reveal>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d233747.34729611073!2d90.412165!3d23.736597!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8f619b1033d%3A0xb5fa99c070621381!2s3rd%20Floor%2C%2036%20Purana%20Paltan%2C%20Dhaka%201000%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1761284812030!5m2!1sen!2sus"
-                width="100%"
-                height="100%"
-                className="rounded-xl border-0"
-                style={{
-                  width: "1192px",
-                  height: "430px"
-                }}
-                allowFullScreen
-                loading="lazy"
-                title="Company Location"
-              ></iframe>
-            </Reveal>
-          </div>
-
-          {/* Contact Cards */}
-          <div className="flex justify-between flex-wrap mx-auto mb-12" style={{ width: `${totalWidth}px`, gap: `${gap}px` }}>
-            {contactInfo.map((info, index) => (
-              <Reveal key={index}>
-                <div className="text-center p-6 bg-card border-2 border-border rounded-xl hover:border-primary hover:shadow-red transition-all duration-300" style={{ width: `${cardWidth}px` }}>
-                  <div className="inline-block p-4 bg-primary/10 rounded-xl mb-4">
-                    <info.icon className="text-primary" size={28} />
-                  </div>
-                  <RevealText>
-                    <h3 className="text-lg font-bold text-foreground mb-3">{info.title}</h3>
-                  </RevealText>
-                  {info.details.map((detail, idx) => (
-                    <RevealText key={idx}>
-                      <p className="text-muted-foreground text-sm mb-1">{detail}</p>
-                    </RevealText>
-                  ))}
-                </div>
-              </Reveal>
-            ))}
           </div>
         </section>
       </div>
