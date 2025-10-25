@@ -75,9 +75,12 @@ import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "./ui/reveal";
 import { RevealText } from "./ui/revealText";
+import ContactModal from "./ContactModal";
+import { useState } from "react";
 
 const Contact = () => {
   const { t } = useTranslation();
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   const contactInfo = [
     {
@@ -183,11 +186,21 @@ const Contact = () => {
       {/* Call to Action */}
       <div className="text-center flex justify-center">
         <Reveal>
-          <Button variant="hero" size="lg" className="text-lg px-12">
+          <Button 
+            variant="hero" 
+            size="lg" 
+            className="text-lg px-12"
+            onClick={() => setIsContactModalOpen(true)}
+          >
             Schedule a Consultation
           </Button>
         </Reveal>
       </div>
+      
+      <ContactModal 
+        open={isContactModalOpen} 
+        onOpenChange={setIsContactModalOpen} 
+      />
     </section>
   );
 };

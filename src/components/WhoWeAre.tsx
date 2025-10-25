@@ -150,10 +150,13 @@ import ceoImage from "@/assets/ceo-portrait.jpg";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "./ui/reveal";
 import { RevealText } from "./ui/revealText";
-import dd from '@/assets/whoweare.png'
+import dd from '@/assets/whoweare.png';
+import ContactModal from "./ContactModal";
+import { useState } from "react";
 
 const WhoWeAre = () => {
   const { t } = useTranslation();
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
    
   const highlights = [
     "N5 & N4 Japanese language training",
@@ -232,7 +235,11 @@ const WhoWeAre = () => {
               </div>
 
               <Reveal>
-                <Button variant="hero" size="lg">
+                <Button 
+                  variant="hero" 
+                  size="lg"
+                  onClick={() => setIsContactModalOpen(true)}
+                >
                   Book a Consultation
                 </Button>
               </Reveal>
@@ -354,6 +361,11 @@ const WhoWeAre = () => {
           </Reveal>
         </div>
       </div>
+      
+      <ContactModal 
+        open={isContactModalOpen} 
+        onOpenChange={setIsContactModalOpen} 
+      />
     </section>
   );
 };

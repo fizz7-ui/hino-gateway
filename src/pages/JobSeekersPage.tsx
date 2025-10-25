@@ -199,14 +199,20 @@ const JobSeekersPage = () => {
         <section className="py-24">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <RevealText>
+              <Center >
+                <div className="flex flex-col text-center">
+                 <Center>
+                   <RevealText>
                 <h2 className="text-4xl md:text-5xl font-bold mb-4">Simple Application Process</h2>
               </RevealText>
+                 </Center>
               <RevealText>
                 <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                   Follow these easy steps to start your journey towards your next career opportunity
                 </p>
               </RevealText>
+                </div>
+              </Center>
             </div>
 
             <div className="max-w-4xl mx-auto">

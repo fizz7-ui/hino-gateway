@@ -85,11 +85,13 @@ import { Reveal } from "./ui/reveal";
 import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { useState, useEffect } from "react";
+import ContactModal from "./ContactModal";
 
 const Hero = () => {
   const { t } = useTranslation();
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   const slides = [
    {
@@ -205,7 +207,12 @@ const Hero = () => {
 
                     <Reveal>
                       <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                        <Button variant="hero" size="lg" className="text-lg">
+                        <Button 
+                          variant="hero" 
+                          size="lg" 
+                          className="text-lg"
+                          onClick={() => setIsContactModalOpen(true)}
+                        >
                           {t("hero.cta")}
                           <ArrowRight className="ml-2" />
                         </Button>
@@ -239,6 +246,11 @@ const Hero = () => {
           ))}
         </div>
       </Carousel>
+      
+      <ContactModal 
+        open={isContactModalOpen} 
+        onOpenChange={setIsContactModalOpen} 
+      />
     </section>
   );
 };

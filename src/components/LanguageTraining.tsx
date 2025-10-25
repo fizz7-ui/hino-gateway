@@ -94,9 +94,12 @@ import { Button } from "@/components/ui/button";
 import japaneseTrainingImg from "@/assets/japanese-training.jpg";
 import { Reveal } from "./ui/reveal";
 import { RevealText } from "./ui/revealText";
+import ContactModal from "./ContactModal";
+import { useState } from "react";
 
 const LanguageTraining = () => {
   const { t } = useTranslation();
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const programs = [
     {
       icon: BookOpen,
@@ -183,7 +186,12 @@ const LanguageTraining = () => {
                   prepared for Japanese workplace culture and communication.
                 </p>
               </Reveal>
-              <Button variant="hero" size="lg" className="text-lg px-12">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="text-lg px-12"
+                onClick={() => setIsContactModalOpen(true)}
+              >
                 {t("languageTraining.cta")}
               </Button>
             </div>
@@ -191,6 +199,11 @@ const LanguageTraining = () => {
           </div>
         </div>
       </div>
+      
+      <ContactModal 
+        open={isContactModalOpen} 
+        onOpenChange={setIsContactModalOpen} 
+      />
     </section>
   );
 };

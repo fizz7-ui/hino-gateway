@@ -130,9 +130,12 @@ import itServicesImg from "@/assets/industries/it-services.jpg";
 import generalLaborImg from "@/assets/industries/general-labor.jpg";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "./ui/reveal";
+import ContactModal from "./ContactModal";
+import { useState } from "react";
 
 const Industries = () => {
   const { t } = useTranslation();
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const industries = [
     {
       image: constructionImg,
@@ -237,13 +240,22 @@ const Industries = () => {
             </div>
 
             <Reveal>
-              <Button variant="hero" size="lg">
+              <Button 
+                variant="hero" 
+                size="lg"
+                onClick={() => setIsContactModalOpen(true)}
+              >
                 Book a Consultation
               </Button>
             </Reveal>
           </div>
         </Reveal>
       </div>
+      
+      <ContactModal 
+        open={isContactModalOpen} 
+        onOpenChange={setIsContactModalOpen} 
+      />
     </section>
   );
 };

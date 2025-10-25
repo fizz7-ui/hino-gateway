@@ -124,7 +124,7 @@
 // };
 
 // export default VisaServices;
-import { useEffect, useCallback } from "react";
+import { useEffect, useCallback, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -139,8 +139,11 @@ import { Briefcase, GraduationCap, Plane, Building2, MapPin, Users } from "lucid
 import { Button } from "@/components/ui/button";
 import { Reveal } from "./ui/reveal";
 import { RevealText } from "./ui/revealText";
+import ContactModal from "./ContactModal";
 
 const VisaServices = () => {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  
   const visaTypes = [
     {
       icon: Briefcase,
@@ -254,13 +257,23 @@ const VisaServices = () => {
               We handle every step from training to placement with full legal support and
               transparency. Our expert team ensures a hassle-free visa processing experience.
             </p>
-            <Button variant="hero" size="lg" className="text-lg px-12 md:text-sm max-md:text-sm">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="text-lg px-12 md:text-sm max-md:text-sm"
+              onClick={() => setIsContactModalOpen(true)}
+            >
               Start Your Visa Application
             </Button>
           </div>
         </Reveal>
         </div>
       </div>
+      
+      <ContactModal 
+        open={isContactModalOpen} 
+        onOpenChange={setIsContactModalOpen} 
+      />
     </section>
   );
 };
