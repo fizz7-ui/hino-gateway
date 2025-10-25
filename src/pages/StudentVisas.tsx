@@ -394,9 +394,9 @@ const StudentVisas = () => {
             </RevealText>
               </h2>
           </Center>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 items-stretch auto-cols-fr lg:grid-cols-4 gap-8">
             <Reveal>
-              <div className="bg-card p-6 rounded-lg border text-center">
+              <div className="bg-card p-6  rounded-lg border text-center" style={{height: "250px !important"}}>
                 <FileCheck className="w-12 h-12 text-primary mb-4 mx-auto" />
                 <h3 className="text-xl font-semibold mb-2">
                   Government-Approved SO

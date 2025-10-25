@@ -314,7 +314,7 @@ const AboutPage = () => {
       {/* Stats */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+          <div className="grid  grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
             {stats.map((stat, index) => {
               const Icon = stat.icon;
               return (
@@ -362,12 +362,12 @@ const AboutPage = () => {
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 items-stretch auto-cols-fr md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {values.map((value, index) => {
               const Icon = value.icon;
               return (
                 <Reveal key={index}>
-                  <div className="bg-card border-2 border-border rounded-xl p-8 hover:border-primary hover:shadow-red transition-all duration-300">
+                  <div className="bg-card border-2 border-border rounded-xl p-8 hover:border-primary transition-all duration-300 h-full flex flex-col">
                     <Reveal>
                       <div className="p-4 bg-primary/10 rounded-xl inline-block mb-6">
                         <Icon className="text-primary" size={32} />

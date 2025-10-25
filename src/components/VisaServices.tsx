@@ -140,6 +140,7 @@ import { Button } from "@/components/ui/button";
 import { Reveal } from "./ui/reveal";
 import { RevealText } from "./ui/revealText";
 import ContactModal from "./ContactModal";
+import { Center } from "./ui/center";
 
 const VisaServices = () => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
@@ -248,11 +249,14 @@ const VisaServices = () => {
 
         <Reveal>
           <div className="bg-gradient-subtle border-2 border-border rounded-2xl p-8 md:p-12 max-w-4xl mx-auto text-center">
+            <Center>
             <RevealText>
               <h3 className="text-3xl font-bold mb-4">
                 Explore Our Full Range of <span className="text-primary">Visa Services</span>
               </h3>
             </RevealText>
+
+            </Center>
             <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
               We handle every step from training to placement with full legal support and
               transparency. Our expert team ensures a hassle-free visa processing experience.

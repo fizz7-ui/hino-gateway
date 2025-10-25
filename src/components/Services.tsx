@@ -83,6 +83,7 @@ import { useTranslation } from "react-i18next";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Reveal } from "./ui/reveal";
 import { RevealText } from "./ui/revealText";
+import { Center } from "./ui/center";
 
 const Services = () => {
   const { t } = useTranslation();
@@ -121,11 +122,13 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <Reveal>
           <div className="text-center mb-16">
-            <RevealText>
+            <Center>
+              <RevealText>
               <h2 className="text-4xl md:text-5xl text-left font-bold mb-4">
               {t("services.title")}
             </h2>
             </RevealText>
+            </Center>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               {t("services.subtitle")}
             </p>
