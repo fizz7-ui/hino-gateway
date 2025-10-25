@@ -20,10 +20,14 @@ const Navigation = () => {
 
   const navLinks = [
     { name: t("nav.home"), href: "/", type: "route" },
-    { name: t("nav.countries"), href: "/countries", type: "route" },
     { name: t("nav.training"), href: "#training", type: "hash" },
     { name: t("nav.about"), href: "/about", type: "route" },
-    { name: t("nav.contact"), href: "/contact", type: "route" },
+    { name: "Job Seekers", href: "/job-seekers", type: "route" },
+  ];
+
+  const countryLinks = [
+    { name: "Japan", href: "/countries/japan" },
+    { name: "Saudi Arabia", href: "/countries/saudi-arabia" },
   ];
 
   const serviceLinks = [
@@ -66,6 +70,22 @@ const Navigation = () => {
                 </a>
               )
             )}
+            {/* Countries Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="text-foreground hover:text-primary transition-all duration-300 font-medium hover:scale-105 flex items-center gap-1">
+                {t("nav.countries")}
+                <ChevronDown className="w-4 h-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-card border-border">
+                {countryLinks.map((country) => (
+                  <DropdownMenuItem key={country.name} asChild>
+                    <Link to={country.href} className="cursor-pointer">
+                      {country.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
             {/* Services Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger className="text-foreground hover:text-primary transition-all duration-300 font-medium hover:scale-105 flex items-center gap-1">
@@ -130,6 +150,22 @@ const Navigation = () => {
                   </a>
                 )
               )}
+              {/* Mobile Countries */}
+              <div className="border-t border-border pt-2">
+                <div className="text-muted-foreground font-semibold mb-2">
+                  {t("nav.countries")}
+                </div>
+                {countryLinks.map((country) => (
+                  <Link
+                    key={country.name}
+                    to={country.href}
+                    className="text-foreground hover:text-primary transition-all duration-300 pl-4 py-2 block"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {country.name}
+                  </Link>
+                ))}
+              </div>
               {/* Mobile Services */}
               <div className="border-t border-border pt-2">
                 <div className="text-muted-foreground font-semibold mb-2">
