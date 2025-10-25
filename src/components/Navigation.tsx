@@ -1,22 +1,39 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import LanguageSelector from "@/components/LanguageSelector";
+import ContactModal from "@/components/ContactModal";
 import logo from "@/assets/logo.jpg";
 
 const Navigation = () => {
   const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   const navLinks = [
     { name: t("nav.home"), href: "/", type: "route" },
-    { name: t("nav.services"), href: "#services", type: "hash" },
-    { name: t("nav.countries"), href: "#countries", type: "hash" },
+    { name: t("nav.countries"), href: "/countries", type: "route" },
     { name: t("nav.training"), href: "#training", type: "hash" },
     { name: t("nav.about"), href: "/about", type: "route" },
-    { name: t("nav.contact"), href: "#contact", type: "hash" },
+    { name: t("nav.contact"), href: "/contact", type: "route" },
+  ];
+
+  const serviceLinks = [
+    { name: "Air Tickets", href: "/air-tickets" },
+    { name: "Work Visas", href: "/work-visas" },
+    { name: "Student Visa", href: "/student-visas" },
+    { name: "Hajj And Umrah Visas", href: "/hajj-umrah" },
+    { name: "Tour Package", href: "/tour-packages" },
+    { name: "Okala", href: "#" },
+    { name: "Language Admission", href: "#" },
   ];
 
   return (
@@ -49,12 +66,31 @@ const Navigation = () => {
                 </a>
               )
             )}
+            {/* Services Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="text-foreground hover:text-primary transition-all duration-300 font-medium hover:scale-105 flex items-center gap-1">
+                {t("nav.services")}
+                <ChevronDown className="w-4 h-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-card border-border">
+                {serviceLinks.map((service) => (
+                  <DropdownMenuItem key={service.name} asChild>
+                    <Link to={service.href} className="cursor-pointer">
+                      {service.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
             <LanguageSelector />
-            <Link to="/login">
-              <Button variant="hero" size="lg" className="animate-fade-in">
-                {t("nav.getStarted")}
-              </Button>
-            </Link>
+            <Button
+              variant="hero"
+              size="lg"
+              className="animate-fade-in"
+              onClick={() => setIsContactModalOpen(true)}
+            >
+              Book a Consultation
+            </Button>
           </div>
 
           {/* Mobile Menu Button & Language Selector */}
@@ -94,15 +130,38 @@ const Navigation = () => {
                   </a>
                 )
               )}
-              <Link to="/login" onClick={() => setIsMenuOpen(false)}>
-                <Button variant="hero" size="lg" className="w-full">
-                  {t("nav.getStarted")}
-                </Button>
-              </Link>
+              {/* Mobile Services */}
+              <div className="border-t border-border pt-2">
+                <div className="text-muted-foreground font-semibold mb-2">
+                  {t("nav.services")}
+                </div>
+                {serviceLinks.map((service) => (
+                  <Link
+                    key={service.name}
+                    to={service.href}
+                    className="text-foreground hover:text-primary transition-all duration-300 pl-4 py-2 block"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {service.name}
+                  </Link>
+                ))}
+              </div>
+              <Button
+                variant="hero"
+                size="lg"
+                className="w-full"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  setIsContactModalOpen(true);
+                }}
+              >
+                Book a Consultation
+              </Button>
             </div>
           </div>
         )}
       </div>
+      <ContactModal open={isContactModalOpen} onOpenChange={setIsContactModalOpen} />
     </nav>
   );
 };

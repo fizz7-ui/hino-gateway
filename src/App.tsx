@@ -4,8 +4,14 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
-import Login from "./pages/Login";
 import AboutPage from "./pages/AboutPage";
+import AirTickets from "./pages/AirTickets";
+import WorkVisas from "./pages/WorkVisas";
+import StudentVisas from "./pages/StudentVisas";
+import HajjUmrah from "./pages/HajjUmrah";
+import TourPackages from "./pages/TourPackages";
+import CountriesPage from "./pages/CountriesPage";
+import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -18,8 +24,14 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/air-tickets" element={<AirTickets />} />
+          <Route path="/work-visas" element={<WorkVisas />} />
+          <Route path="/student-visas" element={<StudentVisas />} />
+          <Route path="/hajj-umrah" element={<HajjUmrah />} />
+          <Route path="/tour-packages" element={<TourPackages />} />
+          <Route path="/countries" element={<CountriesPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
