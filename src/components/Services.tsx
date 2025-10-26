@@ -88,34 +88,53 @@ import { Center } from "./ui/center";
 const Services = () => {
   const { t } = useTranslation();
   
-  const services = [
-    {
-      icon: Briefcase,
-      title: t("services.recruitment.title"),
-      description: t("services.recruitment.desc"),
-      features: ["Construction Workers", "Factory Staff", "Hospitality", "Technical Jobs"],
-    },
-    {
-      icon: GraduationCap,
-      title: "Study Abroad Programs",
-      description:
-        "Comprehensive student visa services and guidance for pursuing education internationally.",
-      features: ["University Admissions", "Student Visas", "Education Counseling", "Scholarship Assistance"],
-    },
-    {
-      icon: FileText,
-      title: t("services.visa.title"),
-      description: t("services.visa.desc"),
-      features: ["Work Visas", "Tourist Visas", "Hajj & Umrah", "Family Visas"],
-    },
-    {
-      icon: Plane,
-      title: "Travel & Tour Packages",
-      description:
-        "Complete travel solutions including air ticketing and customized tour packages worldwide.",
-      features: ["Air Ticketing", "Tour Packages", "Travel Insurance", "Itinerary Planning"],
-    },
-  ];
+ const services = [
+  {
+    icon: Briefcase,
+    title: t("services.recruitment.title"),
+    description: t("services.recruitment.desc"),
+    features: [
+      t("services.recruitment.features.constructionWorkers"),
+      t("services.recruitment.features.factoryStaff"),
+      t("services.recruitment.features.hospitality"),
+      t("services.recruitment.features.technicalJobs"),
+    ],
+  },
+  {
+    icon: GraduationCap,
+    title: t("services.studyAbroad.title"),
+    description: t("services.studyAbroad.desc"),
+    features: [
+      t("services.studyAbroad.features.universityAdmissions"),
+      t("services.studyAbroad.features.studentVisas"),
+      t("services.studyAbroad.features.educationCounseling"),
+      t("services.studyAbroad.features.scholarshipAssistance"),
+    ],
+  },
+  {
+    icon: FileText,
+    title: t("services.visa.title"),
+    description: t("services.visa.desc"),
+    features: [
+      t("services.visa.features.workVisas"),
+      t("services.visa.features.touristVisas"),
+      t("services.visa.features.hajjUmrah"),
+      t("services.visa.features.familyVisas"),
+    ],
+  },
+  {
+    icon: Plane,
+    title: t("services.travel.title"),
+    description: t("services.travel.desc"),
+    features: [
+      t("services.travel.features.airTicketing"),
+      t("services.travel.features.tourPackages"),
+      t("services.travel.features.travelInsurance"),
+      t("services.travel.features.itineraryPlanning"),
+    ],
+  },
+];
+
 
   return (
     <section id="services" className="py-24 bg-gradient-subtle">

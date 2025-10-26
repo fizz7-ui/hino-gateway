@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { useTranslation } from "react-i18next";
 
 const Certificates: React.FC = () => {
   const certificateImages: string[] = [
@@ -23,7 +24,7 @@ const Certificates: React.FC = () => {
     "https://royalrollsmanpower.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-30-at-4.09.28-PM-3-724x1024.jpeg",
 
   ];
-
+const { t } = useTranslation();
   const autoplay = React.useRef(
     Autoplay({
       delay: 3500,

@@ -6,6 +6,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/ui/reveal";
 import { RevealText } from "@/components/ui/revealText";
+import { useTranslation } from "react-i18next";
+import { Center } from "@/components/ui/center";
 
 const BlogPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -13,63 +15,25 @@ const BlogPage = () => {
 
   const categories = ["All", "Japan", "Training", "Success Stories", "News"];
 
-  // Placeholder blog posts - user will add content
+  const { t } = useTranslation();
+
+  // Placeholder blog posts - now using JSON values
   const blogPosts = [
     {
       id: 1,
-      title: "Blog Post Title 1",
-      category: "Japan",
-      excerpt: "Blog post excerpt will go here...",
+      title: t("blog.blog1.title"),
+      category: "Success Stories",
+      excerpt: t("blog.blog1.desc"),
       date: "2024-02-15",
       image: "" // User will add images
-    },
-    {
-      id: 2,
-      title: "Blog Post Title 2",
-      category: "Training",
-      excerpt: "Blog post excerpt will go here...",
-      date: "2024-02-14",
-      image: ""
-    },
-    {
-      id: 3,
-      title: "Blog Post Title 3",
-      category: "Success Stories",
-      excerpt: "Blog post excerpt will go here...",
-      date: "2024-02-13",
-      image: ""
-    },
-    {
-      id: 4,
-      title: "Blog Post Title 4",
-      category: "News",
-      excerpt: "Blog post excerpt will go here...",
-      date: "2024-02-12",
-      image: ""
-    },
-    {
-      id: 5,
-      title: "Blog Post Title 5",
-      category: "Japan",
-      excerpt: "Blog post excerpt will go here...",
-      date: "2024-02-11",
-      image: ""
-    },
-    {
-      id: 6,
-      title: "Blog Post Title 6",
-      category: "Training",
-      excerpt: "Blog post excerpt will go here...",
-      date: "2024-02-10",
-      image: ""
     }
   ];
 
-  // Placeholder photo gallery - user will add images
+  // Placeholder photo gallery - using JSON
   const galleryPhotos = Array(12).fill(null).map((_, i) => ({
     id: i + 1,
     image: "", // User will add images
-    title: `Gallery Photo ${i + 1}`
+    title: `${t("blog.title1")} ${i + 1}`
   }));
 
   const filteredPosts = blogPosts.filter(post => {
@@ -88,14 +52,18 @@ const BlogPage = () => {
         <section className="py-24 bg-gradient-subtle">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <RevealText>
-                <h1 className="text-4xl md:text-6xl font-bold mb-4">Blog & News</h1>
+             <Center>
+               <div className="flex-col">
+                <RevealText>
+                <h2 className="text-4xl md:text-5xl font-bold mb-4">{t("blog.title")}</h2>
               </RevealText>
               <RevealText>
-                <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                  Stay updated with our latest stories, insights, and news
+                <p className="text-xl text-muted-foreground">
+                  {t("blog.desc")}
                 </p>
               </RevealText>
+               </div>
+              </Center>
             </div>
 
             {/* Search and Filter Bar */}
@@ -106,7 +74,7 @@ const BlogPage = () => {
                     <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-muted-foreground" size={20} />
                     <Input
                       type="text"
-                      placeholder="Search blog posts..."
+                      placeholder={t("blog.title")}
                       className="pl-12 h-12"
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
@@ -149,7 +117,7 @@ const BlogPage = () => {
                       <h3 className="text-xl font-bold mb-3">{post.title}</h3>
                       <p className="text-muted-foreground text-sm mb-4">{post.excerpt}</p>
                       <Button variant="link" className="p-0 h-auto">
-                        Read More →
+                        {t("blog.read")} →
                       </Button>
                     </div>
                   </div>
@@ -159,7 +127,7 @@ const BlogPage = () => {
 
             {filteredPosts.length === 0 && (
               <div className="text-center py-12">
-                <p className="text-muted-foreground text-lg">No blog posts found matching your criteria.</p>
+                <p className="text-muted-foreground text-lg">{t("blog.error")}</p>
               </div>
             )}
           </div>
@@ -169,14 +137,18 @@ const BlogPage = () => {
         <section className="py-24">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <RevealText>
-                <h2 className="text-4xl md:text-5xl font-bold mb-4">Photo Gallery</h2>
+              <Center>
+               <div className="flex-col">
+                <RevealText>
+                <h2 className="text-4xl md:text-5xl font-bold mb-4">{t("blog.title1")}</h2>
               </RevealText>
               <RevealText>
                 <p className="text-xl text-muted-foreground">
-                  Moments captured from our journey
+                  {t("blog.desc1")}
                 </p>
               </RevealText>
+               </div>
+              </Center>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
@@ -187,7 +159,7 @@ const BlogPage = () => {
                       <img src={photo.image} alt={photo.title} className="w-full h-full object-cover" />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center">
-                        <p className="text-muted-foreground text-sm">Photo {photo.id}</p>
+                        <p className="text-muted-foreground text-sm">{photo.title}</p>
                       </div>
                     )}
                   </div>
@@ -202,5 +174,6 @@ const BlogPage = () => {
     </div>
   );
 };
+
 
 export default BlogPage;

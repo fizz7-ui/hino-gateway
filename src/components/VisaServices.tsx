@@ -146,42 +146,42 @@ import { useTranslation } from "react-i18next";
 const VisaServices = () => {
   const { t } = useTranslation();
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
-  
+
   const visaTypes = [
     {
       icon: Briefcase,
-      title: "Unskilled Visa",
-      description: "Work permits for general labor positions across multiple industries",
+      title: t("visaServices.unskilledVisa.title"),
+      description: t("visaServices.unskilledVisa.desc"),
       color: "bg-red-500/10",
     },
     {
       icon: Users,
-      title: "Skilled Manpower Visa",
-      description: "Specialized work visas for skilled professionals and technicians",
+      title: t("visaServices.skilledManpowerVisa.title"),
+      description: t("visaServices.skilledManpowerVisa.desc"),
       color: "bg-primary/10",
     },
     {
       icon: GraduationCap,
-      title: "Student Japan Visa",
-      description: "Study permits for Japanese universities and language schools",
+      title: t("visaServices.studentJapanVisa.title"),
+      description: t("visaServices.studentJapanVisa.desc"),
       color: "bg-blue-500/10",
     },
     {
       icon: MapPin,
-      title: "Hajj and Umrah Visa",
-      description: "Religious pilgrimage visas for Saudi Arabia with full support",
+      title: t("visaServices.hajjUmrahVisa.title"),
+      description: t("visaServices.hajjUmrahVisa.desc"),
       color: "bg-green-500/10",
     },
     {
       icon: Plane,
-      title: "Tourist Visa",
-      description: "Travel visas for leisure and tourism to destinations worldwide",
+      title: t("visaServices.touristVisa.title"),
+      description: t("visaServices.touristVisa.desc"),
       color: "bg-purple-500/10",
     },
     {
       icon: Building2,
-      title: "Work & Family Visas",
-      description: "Employment and dependent visas for UAE, Qatar, and Middle East",
+      title: t("visaServices.workFamilyVisa.title"),
+      description: t("visaServices.workFamilyVisa.desc"),
       color: "bg-orange-500/10",
     },
   ];
@@ -189,22 +189,24 @@ const VisaServices = () => {
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className=" grid justify-center text-center mb-16">
+        {/* Heading */}
+        <div className="grid justify-center text-center mb-16">
           <div className="flex justify-center">
             <RevealText>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Our <span className="text-primary">Visa Services</span>
-            </h2>
-          </RevealText>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                {t("visaServices.title")}{" "}
+                <span className="text-primary">{t("visaServices.subtitles")}</span>
+              </h2>
+            </RevealText>
           </div>
           <Reveal>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We help you secure global work & travel visas with full legal support and transparency.
-              Launch your global career with secure job placement support.
+              {t("visaServices.desc")}
             </p>
           </Reveal>
         </div>
 
+        {/* Carousel */}
         <div className="max-w-5xl mx-auto mb-12">
           <Carousel
             opts={{
@@ -247,39 +249,36 @@ const VisaServices = () => {
             <CarouselNext className="hidden md:flex" />
           </Carousel>
         </div>
+
+        {/* Explore Section */}
         <div className="flex justify-center">
-
-        <Reveal>
-          <div className="bg-gradient-subtle border-2 border-border rounded-2xl p-8 md:p-12 max-w-4xl mx-auto text-center">
-            <Center>
-            <RevealText>
-              <h3 className="text-3xl font-bold mb-4">
-                Explore Our Full Range of <span className="text-primary">Visa Services</span>
-              </h3>
-            </RevealText>
-
-            </Center>
-            <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-              We handle every step from training to placement with full legal support and
-              transparency. Our expert team ensures a hassle-free visa processing experience.
-            </p>
-            <Button 
-              variant="hero" 
-              size="lg" 
-              className="text-lg px-12 md:text-sm max-md:text-sm"
-              onClick={() => setIsContactModalOpen(true)}
-            >
-              {t("visaServices.cta")}
-            </Button>
-          </div>
-        </Reveal>
+          <Reveal>
+            <div className="bg-gradient-subtle border-2 border-border rounded-2xl p-8 md:p-12 max-w-4xl mx-auto text-center">
+              <Center>
+                <RevealText>
+                  <h3 className="text-3xl font-bold mb-4">
+                    {t("visaServices.explore.title")}
+                    <span className="text-primary">Visa Services</span>
+                  </h3>
+                </RevealText>
+              </Center>
+              <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
+                {t("visaServices.explore.desc")}
+              </p>
+              <Button
+                variant="hero"
+                size="lg"
+                className="text-lg px-12 md:text-sm max-md:text-sm"
+                onClick={() => setIsContactModalOpen(true)}
+              >
+                {t("visaServices.cta")}
+              </Button>
+            </div>
+          </Reveal>
         </div>
       </div>
-      
-      <ContactModal 
-        open={isContactModalOpen} 
-        onOpenChange={setIsContactModalOpen} 
-      />
+
+      <ContactModal open={isContactModalOpen} onOpenChange={setIsContactModalOpen} />
     </section>
   );
 };

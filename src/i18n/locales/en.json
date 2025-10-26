@@ -62,7 +62,7 @@
       "title": "Professional Guidance for Visas In Saudi Arabia",
       "subtitle": "Trust us for smooth, legal, and timely visa solutions for all your travel needs"
     },
-    "cta": "Book a Consultation" 
+    "cta": "Book a Consultation"
   },
 
   "services": {
@@ -114,25 +114,26 @@
     "title": "Who We Are",
 
     "subtitle": "Royal Rolls Manpower | Your Trusted ",
-    "subusubtittle": "Manpower & Visa Partner",
+    "subsubtitle": "Manpower & Visa Partner",
     "desc": {
       "title": "Sending Organization (SO) Approved by the Governments of Japan & Bangladesh",
       "desc1": "Royal Rolls Manpower is one of the most reputable manpower recruiting agencies in Bangladesh. Officially recognized as a Sending Organization (SO) by both Japan and Bangladesh, we provide secure and legal overseas job opportunities",
       "desc2": "Through our Japan-approved training center and licensed recruitment services, we prepare workers to succeed abroad",
-      "desc3": "Our mission goes beyond job placement: we empower people to become self-reliant, send remittances ethically, and contribute to national growth",
-      "highlights": {
-        "hl1": "N5 & N4 Japanese language training",
-        "hl2": "Work and student visa processing for Japan",
-        "hl3": "Legal manpower export to KSA, UAE, Qatar & more",
-        "hl4": "Government-approved Sending Organization (SO)",
-        "hl5": "Remittance and economic empowerment support"
-      }
+      "desc3": "Our mission goes beyond job placement: we empower people to become self-reliant, send remittances ethically, and contribute to national growth"
+    },
+    "hightlights": {
+      "hl1": "N5 & N4 Japanese language training",
+      "hl2": "Work and student visa processing for Japan",
+      "hl3": "Legal manpower export to KSA, UAE, Qatar & more",
+      "hl4": "Government-approved Sending Organization (SO)",
+      "hl5": "Remittance and economic empowerment support"
     },
     "ceoMessage": "Message From CEO",
     "ceoText": "At Royal Rolls Manpower, I believe our work is not only about connecting people to jobs abroad, but about changing lives and building bridges between nations. Every worker or student who chooses us carries the hope of a better tomorrow for themselves, their families, and for Bangladesh.",
-    "ceoName": "Mohd Sohel Rana",
+    "ceoName": "Md Sohel Rana",
     "ceoTitle": "CEO – Royal Rolls Manpower",
     "ceoContact": "Contact With CEO",
+    "vision": "My vision for Royal Rolls is simple",
     "ceoVision": {
       "vision1": "To prepare our people with the right skills and mindset to succeed abroad.",
       "vision2": "To create trusted partnerships with employers worldwide.",
@@ -150,7 +151,8 @@
     "it": "IT & Technical Services",
     "general": "General Labor & Support Staff",
     "sectors": {
-      "title": "We provide manpower to a wide range of high-demand sectors across the globe",
+      "title": "We provide manpower to a wide range of  ",
+      "subtitles": "high-demand sectors across the globe",
       "houseMaid": "House Maid",
       "salesman": "Salesman",
       "it": "IT",
@@ -256,14 +258,6 @@
     },
     "desc2": "All training programs include placement assistance"
   },
-  "whyRollsRoyals": {
-    "title": "Why Rolls Royal",
-    "subtitle": "Trusted Manpower Experts in Bangladesh",
-    "subsub": "for Global Opportunities",
-    "desc1": "Our company has extensive experience spanning over 15 years and holds all necessary government-approved licenses and certifications, ensuring complete legal compliance. We specialize in developing a highly skilled workforce through comprehensive training programs conducted by experienced Bangladeshi and Japanese instructors and technician trainers proficient in Japanese language and technology. Additionally, we are partnered with leading government training centers in Bangladesh, further enhancing the quality and credibility of our training initiatives.",
-    "desc2": "Our mission is to deploy the most competent professionals across all trades to Japan, fully approved and recognized by both the Bangladeshi and Japanese governments. We carefully match the supply of skilled workers with Japan's labor demands, always prioritizing the needs, expectations, and respect of our counterparts. At every stage, we maintain the highest standards of quality, accountability, and professionalism, fostering strong, lasting partnerships between the two countries.",
-    "ending": "Royal Rolls Manpower is a trusted bridge between Bangladesh and global opportunities. From Japan to the Gulf, we train, place, and support workers every step of the way."
-  },
   "about": {
     "title": "About   Manpower",
     "subtitle": "Years Agency Experience",
@@ -272,9 +266,11 @@
     "workersPlaced": "Workers Placed",
     "countries": "Countries",
     "successRate": "Success Rate",
+
     "coreValue": {
       "title": "Our",
       "subtitle": "Core Value",
+      "desc": "What sets us apart in the international recruitment industry",
       "transparencyEthics": {
         "title": "Transparency & Ethics",
         "desc": "We operate with 100% transparency in all our dealings. No hidden fees, no false promises – just honest, ethical recruitment practices that put your interests first."
@@ -293,6 +289,7 @@
       }
     },
     "countryServe": {
+      "desc": "Connecting Bangladesh workers with opportunities in top destinations worldwide",
       "title": "Countries We",
       "subtitle": "Serve",
       "opp": "Key Opportunities",
@@ -318,7 +315,9 @@
       }
     },
     "readyToStart": {
-      "title": "Ready to Start Your", "subtitle": "International Career?"
+      "title": "Ready to Start Your",
+      "subtitle": "International Career?",
+      "desc": "Contact us today for a free consultation and take the first step toward your global opportunity."
     }
   },
   "contact": {
@@ -366,6 +365,14 @@
     "popular": "Popular",
     "moreDestinations": "And many more destinations across Asia, Europe, and the Middle East"
   },
+  "whyRollsRoyals": {
+    "title": "Why Rolls Royal",
+    "subtitle": "Trusted Manpower Experts in Bangladesh",
+    "subsub": "for Global Opportunities",
+    "desc1": "Our company has extensive experience spanning over 15 years and holds all necessary government-approved licenses and certifications, ensuring complete legal compliance. We specialize in developing a highly skilled workforce through comprehensive training programs conducted by experienced Bangladeshi and Japanese instructors and technician trainers proficient in Japanese language and technology. Additionally, we are partnered with leading government training centers in Bangladesh, further enhancing the quality and credibility of our training initiatives.",
+    "desc2": "Our mission is to deploy the most competent professionals across all trades to Japan, fully approved and recognized by both the Bangladeshi and Japanese governments. We carefully match the supply of skilled workers with Japan's labor demands, always prioritizing the needs, expectations, and respect of our counterparts. At every stage, we maintain the highest standards of quality, accountability, and professionalism, fostering strong, lasting partnerships between the two countries.",
+    "ending": "Royal Rolls Manpower is a trusted bridge between Bangladesh and global opportunities. From Japan to the Gulf, we train, place, and support workers every step of the way."
+  },
   "testiomional": {
     "khaliq": "We recruited drivers and house mates, and they have been extremely reliable and hardworking. Their dedication makes day-to-day operations much smoother",
     "rashid": "Royal Rolls provided us with excellent construction workers who were well-trained and professional. Their support throughout the process was exceptional",
@@ -376,5 +383,222 @@
       "agencyExp": "Years Agency Experience"
     }
   },
-  "certificate": "Our certificate"
+  "certificate": "Our certificate",
+  "jobSeekers": {
+    "title": "Latest Jobs & Openings",
+    "desc": "Stay updated with our latest opportunities",
+    "workVisas": {
+      "japan": {
+        "title": "Japan Work Visas",
+        "desc": "As a Sending Organization (SO), Royal Rolls Manpower provides direct and legal work visa support for Japan.",
+        "features": {
+          "f1": "N5 & N4 Japanese language training with native instructors",
+          "f2": "Technical skill and specified skilled worker visa categories",
+          "f3": "Student-to-work transition support",
+          "f4": "Direct job placement under Japan's SO system"
+        }
+      },
+      "saudiArabia": {
+        "title": "Saudi Arabia Work Visas",
+        "desc": "Saudi Arabia remains one of the largest employers of Bangladeshi workers.",
+        "features": {
+          "f1": "Secure work visas in construction, hospitality, healthcare & more",
+          "f2": "Employer sponsorship & transparent contracts",
+          "f3": "Guidance for both skilled and unskilled categories",
+          "f4": "Full documentation and migration support"
+        }
+      },
+      "uae": {
+        "title": "UAE Work Visas",
+        "desc": "The UAE offers vast opportunities for Bangladeshi workers.",
+        "features": {
+          "f1": "Work visas in logistics, construction, hospitality, retail, and domestic sectors",
+          "f2": "Fast visa processing with legal compliance",
+          "f3": "Assistance with medical and documentation requirements",
+          "f4": "Long-term job opportunities with high earning potential"
+        }
+      },
+      "qatar": {
+        "title": "Qatar Work Visas",
+        "desc": "Qatar is in continuous demand for manpower, especially in the service and infrastructure sectors.",
+        "features": {
+          "f1": "Work visas for skilled and unskilled workers",
+          "f2": "Transparent and verified recruitment process",
+          "f3": "Opportunities in construction, hospitality, and support roles",
+          "f4": "Secure migration under government regulations"
+        }
+      },
+      "kuwait": {
+        "title": "Kuwait Work Visas",
+        "desc": "Strong demand across service and labor markets.",
+        "features": {
+          "f1": "Hospitality, construction, and domestic staff roles",
+          "f2": "Verified recruitment with worker welfare in focus",
+          "f3": "Support for unskilled and semi-skilled manpower"
+        }
+      },
+      "jordan": {
+        "title": "Jordan Work Visas",
+        "desc": "A growing destination for Bangladeshi workers.",
+        "features": {
+          "f1": "Jobs in the garments, manufacturing, and service sectors",
+          "f2": "Employer-sponsored visas with full compliance",
+          "f3": "Affordable migration process with worker protection"
+        }
+      },
+      "malaysia": {
+        "title": "Malaysia Work Visas",
+        "desc": "A long-standing destination for Bangladeshi manpower.",
+        "features": {
+          "f1": "Factory and manufacturing jobs are in high demand",
+          "f2": "Opportunities in electronics, textiles, and plantations",
+          "f3": "Legal migration with complete orientation support"
+        }
+      },
+      "russia": {
+        "title": "Russia Work Visas",
+        "desc": "An emerging market for skilled and unskilled labor.",
+        "features": {
+          "f1": "Jobs in construction, technical trades, and services",
+          "f2": "Employer-sponsored visas with full documentation",
+          "f3": "Growing opportunities for Bangladeshi workers"
+        }
+      }
+    },
+
+    "recruitment": {
+      "title": "Simple Application Proccess",
+      "subtitle": "Follow these easy steps to start your journey towards your next career opportunity",
+      "steps": {
+        "publicAnnouncement": {
+          "title": "Public Announcement",
+          "desc": "Recruitment begins with advertisements in national newspapers and on social media platforms to reach eligible and interested candidates."
+        },
+        "candidateRegistration": {
+          "title": "Candidate Registration",
+          "desc": "Applicants register by submitting required documents, including: Valid passport, Curriculum Vitae (CV), Educational certificates, Recent photographs. This step officially enlists candidates into the recruitment pipeline."
+        },
+        "primaryInterview": {
+          "title": "Primary Interview & Screening",
+          "desc": "Our recruitment team with Japanese employer's representative conducts initial interviews to assess: Educational background, Work experience, Skill level, Suitability for overseas employment. Shortlisted candidates move forward to training."
+        },
+        "languageTraining": {
+          "title": "Language & Skill Training",
+          "desc": "Selected candidates undergo intensive training in: Basic language (N4 level), Relevant job skills, workplace culture, food habit, and etiquette."
+        },
+        "proficiencyTest": {
+          "title": "Language Proficiency & Skill Test",
+          "desc": "Candidates appear for: Language Proficiency Test (JLPT or JFT-Basic), Industry-specific skill exams (e.g., construction, caregiving, etc.). Passing these is essential for SSW eligibility."
+        },
+        "jobOffer": {
+          "title": "Job Offer & Placement Support",
+          "desc": "Once selected, candidates receive job offers. We assist with: Contract signing, Job role clarification, Employer coordination."
+        },
+        "visaProcessing": {
+          "title": "Visa Application & Processing",
+          "desc": "Our team guides candidates through the visa application process, ensuring accurate documentation and timely submission."
+        },
+        "departure": {
+          "title": "Departure to Abroad",
+          "desc": "Candidates fly to abroad with full documentation, ready to begin their employment journey."
+        }
+      }
+    },
+    "dreamJob": {
+      "title": "Find your dream job in Japan",
+      "desc": "Experience the power of innovation firsthand and discover how Beta's solutions can revolutionize your lending processes. Schedule a personalized demo now to see our advanced machine learning algorithms and cloud-based platform in action.",
+      "cta": "Start Your Application"
+    }
+  },
+  "blog": {
+    "title": "Blog & News",
+    "desc": " Stay updated with our latest stories, insights, and news",
+    "blog1": {
+      "title": "Success of Royal Rolls Manpower",
+
+      "desc": "Our first sending was our first..."
+    },
+    "title1": "Photo Gallery",
+    "desc1": "Moments captured from our journey",
+    "error": "No blog posts found matching your criteria.",
+    "read": "Read More"
+  },
+  "japan": {
+    "slides": {
+      "slide1": {
+        "badge": "Government Approved Sending Organization (SO)",
+        "title": "Your Career, Our Priority",
+        "subtitle": "Royal Rolls Manpower – RL 1264. Trusted manpower recruiting agencies in Bangladesh"
+      },
+      "slide2": {
+        "badge": "Work Abroad, Study Overseas, Or Visit With Ease",
+        "title": "Work & Study Visa In Japan With 100% Guidance",
+        "subtitle": "JLPT Training, SSW & TITP Programs - Your gateway to Japanese employment"
+      },
+      "slide3": {
+        "badge": "Advanced Language Institute",
+        "title": "Sending Organization(SO) Approved Japan Language Center",
+        "subtitle": "Get N5/N4 Certified & Work In Japan"
+      }
+    },
+    "ceo1": "At Royal Rolls Manpower, we believe our role is more than just sending workers abroad, it is about building a lasting bridge of trust, skills, and opportunity between Bangladesh and Japan.",
+    "ceo2": "  As an SO approved by both the Government of Japan and the Government of Bangladesh, we take pride in preparing candidates who are not only skilled and disciplined, but also culturally adaptable, loyal, and committed to contributing positively to Japan's workforce.",
+    "whyBD": {
+      "title": "Why Bangladesh?",
+      "desc": "Bangladesh offers a strong and promising workforce for Japan because of:",
+      "reason1": "A young and dynamic population ready to contribute",
+      "reason2": "Cultural adaptability and respect for discipline",
+      "reason3": "Strong commitment and loyalty to employers",
+      "reason4": "Ability to be quick learners in skills and language"
+    },
+    "ourMission": "Our Mission",
+    "ourMissionDesc1": "We believe that dreams can be transformed into opportunities. Our mission is to empower the hardworking people of Bangladesh by connecting them with life-changing career opportunities in Japan. Through proper training, guidance, and support, we transform potential into success — opening doors to brighter futures for individuals, building stronger foundations for families, and contributing to a stronger economy for Bangladesh.",
+    "ourMissiondesc2": "Every step we take is driven by a clear vision: to reduce unemployment, uplift lives, and create a bridge of friendship and growth between Bangladesh and Japan. By helping our people achieve their dreams abroad, we are uplifting our nation at home. Through this mission, we aspire to position our company as a first-class manpower service provider in Bangladesh, recognized for excellence, trust, and global impact.",
+    "whoWearedesc1": "Royal Rolls Manpower is one of the most reputable manpower recruiting agencies in Bangladesh. Officially recognized as a Sending Organization (SO) by both Japan and Bangladesh, we provide secure and legal overseas job opportunities.Royal Rolls Manpower is one of the most reputable manpower recruiting agencies in Bangladesh. Officially recognized as a Sending Organization (SO) by both Japan and Bangladesh, we have been providing secure and legal overseas job opportunities since 2024. Along with recruitment, we also run the Advanced Language Institute to teach the Japanese language, helping candidates prepare for a brighter future in Japan.",
+    "whoweare2": "Through our Japan-approved training center and licensed recruitment services, we prepare workers to succeed abroad.",
+    "ourVision": "Our vision is to establish ourselves as Bangladesh's leading and first-class manpower service provider, recognized for excellence, integrity, and global impact. We aspire to be the trusted bridge between Bangladesh and Japan, creating endless opportunities for our people to thrive abroad while strengthening Bangladesh's economy at home. We envision a future where Bangladeshi workers are valued worldwide for their skills, discipline, and dedication — turning Bangladesh into a global hub of reliable human resources. Through this vision, we aim not only to supply manpower but also to uplift lives, empower families, and build stronger international partnerships that last for generations.",
+    "advancedLanguage": {
+      "t1": {
+        "tt1": "Programs & Training",
+        "sk1": "Skill Training Programs",
+        "r1": "Technical Intern Training Program (TITP)",
+        "r2": "Specified Skilled Worker (SSW)",
+        "r3": "Caregiving",
+        "r4": "Construction",
+        "r5": "Food Service"
+      },
+      "t2": {
+        "tt2": "Japanese Language Preparation",
+        "r1": "JLPT & JFT-Basic training",
+        "r2": "Cultural immersion workshops",
+        "r3": "Mock interviews in Japanese"
+      },
+      "n1students": "Number of students placed",
+      "pass": "JLPT pass rates",
+      "testiomional": "Testimonials from alumni"
+      
+    },
+    "partnerWus": {
+      "t1": "Partner With Bangladesh: A Reliable Talent Pipeline",
+      "tt1": "Why Partner With Us?",
+      "p1": "We believe in building careers, not just contracts. Every worker we send abroad is trained, prepared, and supported to ensure long-term success.",
+      "p2": "Govt. Approved SO – Legal and transparent recruitment for Japan",
+      "p3": "Skilled & Unskilled Placement – From professionals to general workers, we cover multiple industries", 
+      "p4": "Language & Cultural Training – Especially for Japan, with N5/N4 certification and native instructors",
+      "p5": "End-to-End Support – From documentation to placement and after-arrival guidance",
+      "p6": "Safe & Secure Process – 100% legal recruitment with worker protection in mind",
+      "p7": "Wide Range of Skilled Professions – Our workforce is trained across diverse fields, including: Housemaids & domestic workers, Professional drivers, Qualified nurses & caregivers, Construction workers & technicians, Hotel & hospitality staff, Welders, electricians, plumbers, and other trades"
+    },
+    "placementMonitoring": {
+      "t1": "Our Placement & Monitoring System",
+      "r1":"Pre-departure orientation",
+      "r2": "Post-deployment support", "r3": "Reporting and transparency"
+    },
+    "collabModel": {
+      "t1": "Collaboration Models",
+      "r1": "MoU Templates",
+      "r2": "Placement Procedure Step-by-Step",
+      "cta": "Partner with us"
+    }
+  }
 }

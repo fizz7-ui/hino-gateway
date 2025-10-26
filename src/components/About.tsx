@@ -67,6 +67,7 @@
 // export default About;
 import { Shield, Users, Globe, TrendingUp } from "lucide-react";
 import {Reveal} from "./ui/reveal";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
   const stats = [
@@ -75,7 +76,7 @@ const About = () => {
     { icon: Globe, label: "Countries", value: "15+" },
     { icon: TrendingUp, label: "Success Rate", value: "98%" },
   ];
-
+  const { t } = useTranslation();
   const features = [
     "Government-approved Sending Organization (SO) by Bangladesh & Japan",
     "Transparent and ethical recruitment process",

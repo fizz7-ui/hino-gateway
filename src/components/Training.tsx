@@ -87,28 +87,31 @@ import { MapPinned, PlaneTakeoff, Ticket, ReceiptText } from "lucide-react";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { Reveal } from "@/components/ui/reveal";
 import { RevealText } from "@/components/ui/revealText";
+import { useTranslation } from "react-i18next";
 
 const Training = () => {
+  const { t } = useTranslation();
+
   const programs = [
     {
       icon: MapPinned,
-      title: "Taking Care",
-      description: "Immigration & Visa Process",
+      title: t("training.takingCare.title"),
+      description: t("training.takingCare.desc"),
     },
     {
       icon: PlaneTakeoff,
-      title: "Explore the World",
-      description: "Affordable Travel Packages",
+      title: t("training.exploreWorld.title"),
+      description: t("training.exploreWorld.desc"),
     },
     {
       icon: Ticket,
-      title: "Book Your Flight",
-      description: "Reliable & Hassle-Free Ticketing",
+      title: t("training.bookFlight.title"),
+      description: t("training.bookFlight.desc"),
     },
     {
       icon: ReceiptText,
-      title: "Apply Online",
-      description: "Quick & Easy Visa Application",
+      title: t("training.applyOnline.title"),
+      description: t("training.applyOnline.desc"),
     },
   ];
 
@@ -119,12 +122,13 @@ const Training = () => {
         <div className="mb-16 flex flex-col items-center justify-center">
           <RevealText>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Extra <span className="text-primary">Services</span>
+              {t("training.title")}{" "}
+              <span className="text-primary">{t("training.subtitle")}</span>
             </h2>
           </RevealText>
           <Reveal>
             <p className="text-xl text-muted-foreground max-w-2xl">
-              Preparing you for international success journey
+              {t("training.desc")}
             </p>
           </Reveal>
         </div>
@@ -173,9 +177,7 @@ const Training = () => {
           <Reveal>
             <div className="inline-block p-8 bg-primary/5 border-2 border-primary/20 rounded-2xl text-center">
               <p className="text-foreground text-lg font-semibold mb-2">
-                <RevealText>
-                  All training programs include placement assistance
-                </RevealText>
+                <RevealText>{t("training.desc2")}</RevealText>
               </p>
             </div>
           </Reveal>

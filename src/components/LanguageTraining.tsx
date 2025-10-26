@@ -104,17 +104,17 @@ const LanguageTraining = () => {
     {
       icon: BookOpen,
       title: t("languageTraining.jipt"),
-      description: "Complete Japanese Language Proficiency Test preparation",
+      description: t("languageTraining.jdesc1"),
     },
     {
       icon: Award,
       title: t("languageTraining.ssw"),
-      description: "Specialized training for skilled worker visas in Japan",
+      description: t("languageTraining.sdesc2"),
     },
     {
       icon: GraduationCap,
       title: t("languageTraining.titp"),
-      description: "Technical intern training for hands-on work experience",
+      description: t("languageTraining.tdesc3"),
     },
   ];
 
@@ -125,15 +125,14 @@ const LanguageTraining = () => {
           <div className="text-center mb-16">
             <RevealText>
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                {t("languageTraining.title")} with{" "}
+                {t("languageTraining.title")} {" "}
                 <span className="text-primary">{t("languageTraining.subtitle")}</span>
               </h2>
             </RevealText>
             <div className="flex justify-center align-middle ">
               <Reveal>
               <p className="text-xl flex justify-center align-middle text-center text-muted-foreground max-w-3xl mx-auto">
-                Professional Japanese language training programs designed to prepare you for work and
-                life in Japan
+               {t("languageTraining.desc")}
               </p>
             </Reveal>
             </div>
@@ -176,14 +175,13 @@ const LanguageTraining = () => {
              <div className="flex justify-center ">
                <RevealText>
                 <h3 className="text-3xl font-bold mb-4">
-                  Start Your Journey to <span className="text-primary">Japan</span> Today
+                  {t("languageTraining.journey.title")} <span className="text-primary">{t("languageTraining.journey.subtitle")}</span>  
                 </h3>
               </RevealText>
              </div>
               <Reveal>
                 <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-                  Our comprehensive language programs are designed by experts to ensure you're fully
-                  prepared for Japanese workplace culture and communication.
+                  {t("languageTraining.journey.desc")}
                 </p>
               </Reveal>
               <Button 

@@ -14,32 +14,13 @@ const WhoWeAre = () => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
    
   const highlights = [
-    "N5 & N4 Japanese language training",
-    "Work and student visa processing for Japan",
-    "Legal manpower export to KSA, UAE, Qatar & more",
-    "Government-approved Sending Organization (SO)",
-    "Remittance and economic empowerment support",
+    t("whoWeAre.hightlights.hl1"),
+    t("whoWeAre.hightlights.hl2"),
+    t("whoWeAre.hightlights.hl3"),
+    t("whoWeAre.hightlights.hl4"),
+    t("whoWeAre.hightlights.hl5"),
   ];
-    const testimonials = [
-    {
-      name: "Abdulkhakiq",
-      location: "OMAN",
-      text: "We recruited drivers and house mates, and they have been extremely reliable and hardworking. Their dedication makes day-to-day operations much smoother.",
-      rating: 5
-    },
-    {
-      name: "Ahmed Al-Rashid",
-      location: "SAUDI ARABIA",
-      text: "Royal Rolls provided us with excellent construction workers who were well-trained and professional. Their support throughout the process was exceptional.",
-      rating: 5
-    },
-    {
-      name: "Yuki Tanaka",
-      location: "JAPAN",
-      text: "The workers we hired through Royal Rolls were not only skilled but also culturally prepared. The language training they received made integration seamless.",
-      rating: 5
-    }
-  ];
+  
   return (
     <section id="who-we-are" className="py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -49,8 +30,8 @@ const WhoWeAre = () => {
               {t("whoWeAre.title")}
             </p>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Royal Rolls Manpower | Your Trusted{" "}
-              <span className="text-primary">Manpower & Visa Partner</span>
+              {t("whoWeAre.subtitle")}{" "}
+              <span className="text-primary">{t("whoWeAre.subsubtitle")}</span>
             </h2>
           </div>
         </Reveal>
@@ -59,23 +40,16 @@ const WhoWeAre = () => {
           <Reveal>
             <div>
               <h3 className="text-2xl font-bold mb-6">
-                Sending Organization (SO) Approved by the Governments of Japan &
-                Bangladesh
+                {t("whoWeAre.desc.title")}
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Royal Rolls Manpower is one of the most reputable manpower
-                recruiting agencies in Bangladesh. Officially recognized as a
-                Sending Organization (SO) by both Japan and Bangladesh, we
-                provide secure and legal overseas job opportunities.
+                {t("whoWeAre.desc.desc1")}
               </p>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Through our Japan-approved training center and licensed
-                recruitment services, we prepare workers to succeed abroad.
+                {t("whoWeAre.desc.desc2")}
               </p>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                Our mission goes beyond job placement: we empower people to
-                become self-reliant, send remittances ethically, and contribute
-                to national growth.
+                {t("whoWeAre.desc.desc3")}
               </p>
 
               <div className="space-y-3 mb-8">
@@ -95,7 +69,7 @@ const WhoWeAre = () => {
                   size="lg"
                   onClick={() => setIsContactModalOpen(true)}
                 >
-                  Book a Consultation
+                  {t("hero.cta")}
                 </Button>
               </Reveal>
             </div>
@@ -125,7 +99,7 @@ const WhoWeAre = () => {
                   <div className="mt-4 text-center">
                     <RevealText>
                       <h4 className="font-bold text-xl">
-                        {t("whoWeAre.ceoName")}
+                        Md. Sohel Rana
                       </h4>
                     </RevealText>
                     <RevealText>
@@ -164,7 +138,7 @@ const WhoWeAre = () => {
 
                     <RevealText>
                       <p className="font-semibold text-foreground">
-                        {t("about.vision")}:
+                        {t("whoWeAre.vision")}:
                       </p>
                     </RevealText>
 
@@ -173,8 +147,7 @@ const WhoWeAre = () => {
                         <RevealText>
                           <div className="flex gap-3 items-center">
                           <CheckIcon className="text-primary"/>
-                          To prepare our people with the right skills and
-                          mindset to succeed abroad.
+                          {t("whoWeAre.ceoVision.vision1")}
                           </div>
                         </RevealText>
                       </li>
@@ -183,8 +156,7 @@ const WhoWeAre = () => {
                           <div className="flex gap-3 items-center">
                           <CheckIcon className="text-primary"/>
                            
-                          To create trusted partnerships with employers
-                          worldwide.
+                         {t("whoWeAre.ceoVision.vision2")}
                           </div>
                          
                         </RevealText>
@@ -193,8 +165,7 @@ const WhoWeAre = () => {
                         <RevealText>
                           <div className="flex gap-3 items-center">
                           <CheckIcon className="text-primary"/>
-                         To ensure that every step, from training to placement,
-                          is safe, secure, and dignified.
+                         {t("whoWeAre.ceoVision.vision3")}
                           </div>
                         </RevealText>
                       </li>
@@ -202,11 +173,7 @@ const WhoWeAre = () => {
 
                     <RevealText>
                       <p>
-                        I am proud of the trust we have earned as a
-                        government-approved Sending Organization, and I am
-                        committed to making Royal Rolls a symbol of reliability,
-                        professionalism, and opportunity for all who walk
-                        through our doors.
+                        {t("whoWeAre.ceoProud")}
                       </p>
                     </RevealText>
                   </div>

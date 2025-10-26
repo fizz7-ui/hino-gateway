@@ -136,53 +136,55 @@ import { useState } from "react";
 const Industries = () => {
   const { t } = useTranslation();
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
-  const industries = [
-    {
-      image: constructionImg,
-      title: "Construction & Engineering",
-      alt: "Construction worker at site",
-    },
-    {
-      image: healthcareImg,
-      title: "Healthcare & Nursing",
-      alt: "Healthcare professional",
-    },
-    {
-      image: hospitalityImg,
-      title: "Hospitality & Tourism",
-      alt: "Luxury hospitality resort",
-    },
-    {
-      image: manufacturingImg,
-      title: "Manufacturing & Factory Work",
-      alt: "Manufacturing worker",
-    },
-    {
-      image: itServicesImg,
-      title: "IT & Technical Services",
-      alt: "IT technician",
-    },
-    {
-      image: generalLaborImg,
-      title: "General Labor & Support Staff",
-      alt: "Support staff team",
-    },
-  ];
+ const industries = [
+  {
+    image: constructionImg,
+    title: t("industries.construction"),
+    alt: "Construction worker at site",
+  },
+  {
+    image: healthcareImg,
+    title: t("industries.healthcare"),
+    alt: "Healthcare professional",
+  },
+  {
+    image: hospitalityImg,
+    title: t("industries.hospitality"),
+    alt: "Luxury hospitality resort",
+  },
+  {
+    image: manufacturingImg,
+    title: t("industries.manufacturing"),
+    alt: "Manufacturing worker",
+  },
+  {
+    image: itServicesImg,
+    title: t("industries.it"),
+    alt: "IT technician",
+  },
+  {
+    image: generalLaborImg,
+    title: t("industries.general"),
+    alt: "Support staff team",
+  },
+];
 
-  const positions = [
-    "House Maid",
-    "Salesman",
-    "IT",
-    "Caregiver",
-    "Agriculture",
-    "Drivers",
-    "Nurses",
-    "Construction Workers",
-    "Hotel Boys",
-    "Welders",
-    "Electricians",
-    "Plumbers",
-  ];
+
+ const positions = [
+  t("industries.sectors.houseMaid"),
+  t("industries.sectors.salesman"),
+  t("industries.sectors.it"),
+  t("industries.sectors.caregiver"),
+  t("industries.sectors.agriculture"),
+  t("industries.sectors.drivers"),
+  t("industries.sectors.nurses"),
+  t("industries.sectors.constructionW"),
+  t("industries.sectors.hotelBoy"),
+  t("industries.sectors.welders"),
+  t("industries.sectors.electricians"),
+  t("industries.sectors.plumbers"),
+];
+
 
   return (
     <section className="py-24 bg-background flex flex-col items-center justify-center text-center">
@@ -224,8 +226,8 @@ const Industries = () => {
         <Reveal>
           <div className="max-w-5xl mx-auto bg-gradient-subtle border-2 border-border rounded-2xl p-8 md:p-12 flex flex-col items-center text-center">
             <h3 className="text-3xl font-bold mb-8">
-              We provide manpower to a wide range of{" "}
-              <span className="text-primary">high-demand sectors</span> across the globe:
+              {t("industries.sectors.title")}{" "}
+              <span className="text-primary">{t("industries.sectors.subtitles")}</span>  
             </h3>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-10 place-items-center">
@@ -245,7 +247,7 @@ const Industries = () => {
                 size="lg"
                 onClick={() => setIsContactModalOpen(true)}
               >
-                Book a Consultation
+                {t("nav.getStarted")}
               </Button>
             </Reveal>
           </div>
