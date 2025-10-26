@@ -10,6 +10,7 @@
 All colors MUST be HSL.
 */
 
+  
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -183,4 +184,36 @@ All colors MUST be HSL.
   height: 275.25px;
 }
 
- 
+ .text-containers {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0; /* no padding on small screens */
+}
+
+.text-containers p {
+  color: #64748b; /* slate-500 */
+  font-size: clamp(0.875rem, 2.5vw, 1.125rem); /* fluid scaling */
+  line-height: 1.7;
+  word-break: break-word; /* prevent overflow */
+  text-align: left;
+}
+
+.text-containers p.text-highlight {
+  color: #111827; /* text-foreground */
+  font-weight: 600;
+  font-size: clamp(1rem, 3vw, 1.5rem); /* bigger, fluid heading-like text */
+}
+
+@media (max-width: 640px) {
+  .text-containers {
+    max-width: 100%;
+  }
+
+  .text-containers p {
+    text-align: left;
+    width: 400px; /* center text on mobile */
+  }
+}

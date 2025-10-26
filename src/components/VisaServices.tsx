@@ -141,8 +141,10 @@ import { Reveal } from "./ui/reveal";
 import { RevealText } from "./ui/revealText";
 import ContactModal from "./ContactModal";
 import { Center } from "./ui/center";
-
+import visaServices from "@/i18n/locales/en.json"
+import { useTranslation } from "react-i18next";
 const VisaServices = () => {
+  const { t } = useTranslation();
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   
   const visaTypes = [
@@ -267,7 +269,7 @@ const VisaServices = () => {
               className="text-lg px-12 md:text-sm max-md:text-sm"
               onClick={() => setIsContactModalOpen(true)}
             >
-              Start Your Visa Application
+              {t("visaServices.cta")}
             </Button>
           </div>
         </Reveal>

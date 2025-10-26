@@ -171,7 +171,7 @@ const Hero = () => {
         <CarouselContent>
           {slides.map((slide, index) => (
             <CarouselItem key={index}>
-              <div className="relative min-h-screen flex items-center pt-20">
+              <div className="relative min-h-screen flex flex-col justify-center sm:justify-center md:justify-center pt-10 sm:pt-20">
                 {/* Background Image with Overlay */}
                 <div className="absolute inset-0 z-0">
                   <img
@@ -186,21 +186,21 @@ const Hero = () => {
                 <div className="container mx-auto px-4 relative z-10">
                   <div className="max-w-3xl">
                     <Reveal>
-                      <div className="inline-block mb-6 px-4 py-2 bg-primary/40 border border-primary/100 rounded-full">
-                        <p className="text-primary text-slate-50 font-semibold text-sm">
+                      <div className="inline-block mb-4 sm:mb-6 px-3 py-1 sm:px-4 sm:py-2 bg-primary/40 border border-primary/100 rounded-full">
+                        <p className="text-xs sm:text-sm text-primary text-slate-50 font-semibold">
                           {slide.badge}
                         </p>
                       </div>
                     </Reveal>
 
                     <Reveal>
-                      <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-foreground text-slate-100">
+                      <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight text-foreground text-slate-100">
                         {slide.title}
                       </h1>
                     </Reveal>
 
                     <Reveal>
-                      <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed text-slate-300">
+                      <p className="text-base sm:text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed text-slate-300">
                         {slide.subtitle}
                       </p>
                     </Reveal>

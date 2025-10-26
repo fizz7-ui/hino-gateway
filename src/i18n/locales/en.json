@@ -61,7 +61,8 @@
       "badge": "SECURE, LEGAL & HASSLE-FREE PROCESS",
       "title": "Professional Guidance for Visas In Saudi Arabia",
       "subtitle": "Trust us for smooth, legal, and timely visa solutions for all your travel needs"
-    }
+    },
+    "cta": "Book a Consultation" 
   },
 
   "services": {
@@ -214,7 +215,8 @@
     "workFamilyVisa": {
       "title": "Work & Family Visas",
       "desc": "Employment and dependent visas for UAE, Qatar, and Middle East"
-    }
+    },
+    "cta": "Start Your Visa Application"
   },
   "countries": {
     "title": "Countries We Serve",

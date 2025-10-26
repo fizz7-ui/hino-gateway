@@ -234,7 +234,7 @@ const JobSeekersPage = () => {
 
                         {/* Content Card */}
                         <div className="flex-1 bg-card border-2 border-border rounded-xl p-6 hover:border-primary transition-all duration-300">
-                          <div className="flex items-center gap-3 mb-3">
+                          <div className="flex flex-col text-left justify-items-startitems-center gap-3 mb-3">
                             <div className="text-2xl font-bold text-primary">Step {step.step}</div>
                             <h3 className="text-xl font-bold">{step.title}</h3>
                           </div>

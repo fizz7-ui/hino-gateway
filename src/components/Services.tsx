@@ -143,7 +143,7 @@ const Services = () => {
           className="group hover:shadow-red transition-all duration-300 hover:-translate-y-2 border-2"
         >
           <CardHeader>
-            <div className="mb-4 inline-block p-4 bg-primary/10 rounded-xl group-hover:bg-primary/20 transition-colors">
+            <div className="mb-4 inline-block w-16 p-4 bg-primary/10 rounded-xl group-hover:bg-primary/20 transition-colors">
               <service.icon className="text-primary" size={32} />
             </div>
             <CardTitle className="text-xl mb-2">{service.title}</CardTitle>

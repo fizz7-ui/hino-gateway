@@ -192,7 +192,7 @@ const LanguageTraining = () => {
                 className="text-lg px-12"
                 onClick={() => setIsContactModalOpen(true)}
               >
-                {t("languageTraining.cta")}
+                {t("hero.cta")}
               </Button>
             </div>
           </Reveal>

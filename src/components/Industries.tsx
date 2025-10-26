@@ -231,7 +231,7 @@ const Industries = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-10 place-items-center">
               {positions.map((position, index) => (
                  
-                  <div key={index} className="flex items-center justify-center space-x-3 bg-card border border-border rounded-lg p-3 hover:border-primary transition-colors w-full max-w-[220px]">
+                  <div key={index} className="flex items-center justify-start pl-6 space-x-3 bg-card border border-border rounded-lg p-3 hover:border-primary transition-colors w-full max-w-[220px] ">
                     <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
                     <span className="text-foreground text-sm">{position}</span>
                   </div>

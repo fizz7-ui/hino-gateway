@@ -74,12 +74,12 @@ const ChoseUS = () => {
             <Reveal>
               <div className="text-left mb-12">
                 <p className="text-primary sm:text-left
-                 font-semibold text-sm max-md:text-left uppercase tracking-wider mb-3">
+                 font-semibold text-sm  max-md:text-left  uppercase tracking-wider mb-3">
                   WHY ROYAL ROLLS?
                 </p>
 
                 <RevealText>
-                  <h2 className="text-3xl max-md:text-1xl max-md:text-center max-md:w-80 sm:w-80 md:w-full sm:text-xl text-left md:text-3xl font-bold mb-6">
+                  <h2 className="text-3xl max-md:text-left   max-md:w-80 sm:w-80 md:w-full sm:text-xl text-left md:text-3xl  font-bold mb-6">
                     Trusted Manpower Experts in Bangladesh{" "}
                     <span className="text-primary">
                       for <br />
@@ -93,42 +93,41 @@ const ChoseUS = () => {
             <div className="max-w-6xl   mx-auto space-y-6 text-muted-foreground leading-relaxed">
               {" "}
             </div>
-            <Reveal>
-              <>
-                <p className="text-xl  max-md:text-md sm:text-sm text-left sm:w-96 md:w-full max-md:text-center  max-md:w-96 md:text-xl text-slate-500">
-                  Our company has extensive experience spanning over 15 years
-                  and holds all necessary government-approved licenses and
-                  certifications, ensuring complete legal compliance. We
-                  specialize in developing a highly skilled workforce through
-                  comprehensive training programs conducted by experienced
-                  Bangladeshi and Japanese instructors and technician trainers
-                  proficient in Japanese language and technology. Additionally,
-                  we are partnered with leading government training centers in
-                  Bangladesh, further enhancing the quality and credibility of
-                  our training initiatives.
-                </p>
+<Reveal>
+  <div className="text-containers">
+    <p className="text-normal">
+      Our company has extensive experience spanning over 15 years and holds all necessary 
+      government-approved licenses and certifications, ensuring complete legal compliance. 
+      We specialize in developing a highly skilled workforce through comprehensive training 
+      programs conducted by experienced Bangladeshi and Japanese instructors and technician 
+      trainers proficient in Japanese language and technology. Additionally, we are partnered 
+      with leading government training centers in Bangladesh, further enhancing the quality 
+      and credibility of our training initiatives.
+    </p>
 
-                <p className="text-xl max-md:text-md sm:text-sm text-left sm:w-96  md:w-full  max-md:text-center max-md:w-96 md:text-xl text-slate-500">
-                  Our mission is to deploy the most competent professionals
-                  across all trades to Japan, fully approved and recognized by
-                  both the Bangladeshi and Japanese governments. We carefully
-                  match the supply of skilled workers with Japan's labor
-                  demands, always prioritizing the needs, expectations, and
-                  respect of our counterparts. At every stage, we maintain the
-                  highest standards of quality, accountability, and
-                  professionalism, fostering strong, lasting partnerships
-                  between the two countries.
-                </p>
+    <p className="text-normal">
+      Our mission is to deploy the most competent professionals across all trades to Japan, 
+      fully approved and recognized by both the Bangladeshi and Japanese governments. We carefully 
+      match the supply of skilled workers with Japan's labor demands, always prioritizing the 
+      needs, expectations, and respect of our counterparts. At every stage, we maintain the highest 
+      standards of quality, accountability, and professionalism, fostering strong, lasting partnerships 
+      between the two countries.
+    </p>
 
-                <br />
+    <p className="text-highlight">
+      Royal Rolls Manpower is a trusted bridge between Bangladesh and global opportunities. 
+      From Japan to the Gulf, we train, place, and support workers every step of the way.
+    </p>
+  </div>
+</Reveal>
 
-                <p className="font-semibold max-md:text-md sm:text-sm text-left max-md:text-center md:w-full sm:w-96 max-md:w-96 md:text-xl text-foreground text-xl ">
-                  Royal Rolls Manpower is a trusted bridge between Bangladesh
-                  and global opportunities. From Japan to the Gulf, we train,
-                  place, and support workers every step of the way.
-                </p>
-              </>
-            </Reveal>
+
+
+
+
+
+
+
             <br />
             {/* <Reveal  >
             <div
